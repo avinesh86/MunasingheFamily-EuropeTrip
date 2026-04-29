@@ -3,787 +3,837 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avi's Family Trip to Europe — The Grand Journey 2025</title>
+<title>Avi's Family Trip to Europe — The Grand Journey 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#12100e;--parchment:#f4ede0;--cream:#faf6ef;
-  --gold:#c49a2a;--gold-light:#e8c96a;
-  --rust:#b8461e;--sage:#4a7a52;--sky:#2e6080;
-  --muted:#7a6e60;--border:#d8c8ae;
-  --sl:#7a1e4a;--sl-light:#f5e8ef;
-  --map-bg:#131e2e;
+  --gold:#c49a2a;--gold-light:#e8c96a;--rust:#b8461e;
+  --sage:#4a7a52;--sky:#2e6080;--muted:#7a6e60;--border:#d8c8ae;
+  --map-bg:#131e2e;--bud:#8B4513;--sw:#006AA7;--china:#c41e3a;--slo:#1a7a4a;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
 
-header{background:var(--ink);color:var(--parchment);padding:3.5rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(196,154,42,0.13) 0%,transparent 60%),radial-gradient(ellipse at 75% 50%,rgba(122,30,74,0.11) 0%,transparent 60%)}
+header{background:var(--ink);color:var(--parchment);padding:3rem 2rem 2.5rem;text-align:center;position:relative;overflow:hidden}
+header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(196,154,42,0.14) 0%,transparent 60%),radial-gradient(ellipse at 75% 50%,rgba(196,30,58,0.1) 0%,transparent 60%)}
 header::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 60px,rgba(255,255,255,0.012) 60px,rgba(255,255,255,0.012) 61px)}
 .hi{position:relative;z-index:1}
-.eyebrow{font-size:0.67rem;letter-spacing:0.42em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1rem;font-weight:300}
-header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,5vw,3.4rem);font-weight:700;line-height:1.1;margin-bottom:0.4rem}
-header h1 em{font-weight:400;color:var(--gold-light);font-style:italic;font-size:0.78em}
-.sub{font-size:0.84rem;color:rgba(244,237,224,0.5);font-weight:300;letter-spacing:0.05em}
-.pills{display:flex;justify-content:center;gap:0.55rem;margin-top:1.8rem;flex-wrap:wrap}
-.pill{background:rgba(196,154,42,0.13);border:1px solid rgba(196,154,42,0.32);border-radius:2rem;padding:0.32rem 0.95rem;font-size:0.73rem;color:var(--gold-light);letter-spacing:0.03em}
-.pill.sl{background:rgba(122,30,74,0.2);border-color:rgba(200,100,160,0.4);color:#e8a0c4}
+.eyebrow{font-size:0.66rem;letter-spacing:0.42em;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.9rem;font-weight:300}
+header h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4.5vw,3.2rem);font-weight:700;line-height:1.12;margin-bottom:0.25rem}
+header h1 em{font-weight:400;color:var(--gold-light);font-style:italic;font-size:0.78em;display:block}
+.sub{font-size:0.8rem;color:rgba(244,237,224,0.5);font-weight:300}
+.pills{display:flex;justify-content:center;gap:0.4rem;margin-top:1.4rem;flex-wrap:wrap}
+.pill{background:rgba(196,154,42,0.13);border:1px solid rgba(196,154,42,0.32);border-radius:2rem;padding:0.25rem 0.8rem;font-size:0.68rem;color:var(--gold-light)}
 .pill.go{background:rgba(74,122,82,0.2);border-color:rgba(74,122,82,0.4);color:#90c890}
+.pill.ch{background:rgba(196,30,58,0.2);border-color:rgba(196,30,58,0.4);color:#f08090}
+.pill.warn{background:rgba(184,70,30,0.2);border-color:rgba(184,70,30,0.4);color:#f0a080}
 
-.stats{display:flex;justify-content:center;background:var(--parchment);border-bottom:1px solid var(--border);flex-wrap:wrap}
-.stat{padding:1rem 1.5rem;text-align:center;border-right:1px solid var(--border)}
+.fbanner{background:#1a2418;border-bottom:1px solid #384830;padding:0.8rem 1.5rem}
+.fb-inner{max-width:1080px;margin:0 auto;display:flex;gap:0.85rem;flex-wrap:wrap}
+.fb{flex:1;min-width:240px;background:rgba(255,255,255,0.04);border:1px solid rgba(196,154,42,0.2);border-radius:4px;padding:0.65rem 0.9rem}
+.fb.ch{border-color:rgba(196,30,58,0.35)}
+.fb-lbl{font-size:0.55rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold-light);margin-bottom:0.3rem;opacity:0.7}
+.fb.ch .fb-lbl{color:#f08090}
+.fb-rt{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--parchment)}
+.fb-det{font-size:0.67rem;color:rgba(244,237,224,0.5);margin-top:0.15rem;line-height:1.5}
+.fb-det strong{color:rgba(244,237,224,0.8)}
+
+.nc-wrap{background:var(--parchment);border-bottom:1px solid var(--border);padding:0.75rem 1.5rem}
+.nc-inner{max-width:1080px;margin:0 auto}
+.nc-title{font-size:0.6rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin-bottom:0.45rem}
+.nc-grid{display:flex;flex-wrap:wrap;gap:0.28rem}
+.nci{font-size:0.64rem;background:white;border:1px solid var(--border);border-radius:3px;padding:0.1rem 0.48rem;color:var(--ink)}
+.nci.sw{border-color:var(--sw);color:var(--sw);background:#eef4fb}
+.nci.cph{border-color:#d09020;color:#7a5000;background:#fffae0}
+.nci.ams{border-color:#2e6080;color:#1a4060;background:#e8f0f8}
+.nci.bold{font-weight:600;background:var(--ink);color:var(--gold-light);border-color:var(--ink)}
+.nci.day{border-color:#d4a030;color:#7a5000;background:#fffbe0}
+
+.stats{display:flex;justify-content:center;background:white;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.stat{padding:0.8rem 1.1rem;text-align:center;border-right:1px solid var(--border)}
 .stat:last-child{border-right:none}
-.sn{font-family:'Cormorant Garamond',serif;font-size:1.85rem;color:var(--rust);font-weight:700;line-height:1}
-.sl2{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin-top:0.15rem}
+.sn{font-family:'Cormorant Garamond',serif;font-size:1.55rem;color:var(--rust);font-weight:700;line-height:1}
+.sl2{font-size:0.56rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);margin-top:0.1rem}
 
-.map-wrap{background:var(--map-bg);padding:2rem 1rem 1.4rem;position:relative}
-.map-title{text-align:center;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:rgba(244,237,224,0.5);margin-bottom:0.9rem;letter-spacing:0.07em}
+.map-wrap{background:var(--map-bg);padding:1.6rem 1rem 1.1rem}
+.map-title{text-align:center;font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:rgba(244,237,224,0.45);margin-bottom:0.75rem}
 #rmap{display:block;margin:0 auto;max-width:920px;width:100%}
 
-.wrap{max-width:1080px;margin:0 auto;padding:2.5rem 1.5rem}
+.wrap{max-width:1080px;margin:0 auto;padding:2rem 1.5rem}
 
-.strip{display:flex;flex-wrap:wrap;background:var(--ink);border-radius:5px;overflow:hidden;margin-bottom:2rem}
-.sb{padding:0.72rem 0.85rem;font-size:0.68rem;border-right:1px solid rgba(255,255,255,0.07);flex:1;min-width:85px;text-align:center}
-.sb .sl3{color:rgba(255,255,255,0.38);font-size:0.58rem;text-transform:uppercase;letter-spacing:0.1em}
-.sb .sv{margin-top:0.18rem}
-.sb.c1 .sv{color:#f0b090}.sb.c2 .sv{color:#90c4e0}.sb.c3 .sv{color:#90c890}.sb.c4 .sv{color:#e8a0c4}
+.strip{display:flex;flex-wrap:wrap;background:var(--ink);border-radius:5px;overflow:hidden;margin-bottom:1.6rem}
+.sb{padding:0.52rem 0.5rem;font-size:0.55rem;border-right:1px solid rgba(255,255,255,0.07);flex:1;min-width:58px;text-align:center}
+.sb .sl3{color:rgba(255,255,255,0.3);font-size:0.47rem;text-transform:uppercase;letter-spacing:0.07em}
+.sb .sv{margin-top:0.1rem;line-height:1.3}
+.sb.c1 .sv{color:#f0b090}.sb.c2 .sv{color:#f0d080}.sb.c3 .sv{color:#90c4e0}.sb.c4 .sv{color:#90c890}.sb.c5 .sv{color:#f09090}
 
-.leg{margin-bottom:2.8rem}
-.leg-hd{display:flex;align-items:center;gap:0.9rem;margin-bottom:1.3rem;padding-bottom:0.65rem;border-bottom:2px solid var(--border);flex-wrap:wrap}
-.badge{font-size:0.59rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;padding:0.26rem 0.72rem;border-radius:2px;white-space:nowrap}
+.leg{margin-bottom:2.2rem}
+.leg-hd{display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;padding-bottom:0.52rem;border-bottom:2px solid var(--border);flex-wrap:wrap}
+.badge{font-size:0.55rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;padding:0.2rem 0.6rem;border-radius:2px;white-space:nowrap}
 .b-road{background:var(--rust);color:#fff}.b-fly{background:var(--sky);color:#fff}
-.b-rail{background:var(--sage);color:#fff}.b-sl{background:var(--sl);color:#fff}
-.b-sum{background:var(--ink);color:var(--gold)}
-.lt{font-family:'Cormorant Garamond',serif;font-size:1.28rem;font-style:italic}
-.ld{margin-left:auto;font-size:0.73rem;color:var(--muted);white-space:nowrap}
+.b-rail{background:var(--sage);color:#fff}.b-sum{background:var(--ink);color:var(--gold)}
+.b-china{background:var(--china);color:#fff}
+.lt{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic}
+.ld{margin-left:auto;font-size:0.64rem;color:var(--muted);white-space:nowrap}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:0.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:0.75rem}
 .card{background:#fff;border:1px solid var(--border);border-radius:5px;overflow:hidden;transition:transform .18s,box-shadow .18s}
-.card:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(0,0,0,0.08)}
-.card.slc{background:var(--sl-light);border-color:#c87aaa}
-.chd{padding:0.82rem 1rem 0.68rem;display:flex;align-items:flex-start;gap:0.68rem;border-bottom:1px solid #ede5d8}
-.card.slc .chd{border-bottom-color:#e0c0d0}
-.dn{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;color:var(--gold);line-height:1;min-width:1.9rem}
-.card.slc .dn{color:var(--sl)}
+.card:hover{transform:translateY(-2px);box-shadow:0 5px 18px rgba(0,0,0,0.08)}
+.card.bud{border-top:3px solid var(--bud)}.card.ber{border-top:3px solid #666}
+.card.sw{border-top:3px solid var(--sw)}.card.muc{border-top:3px solid var(--gold)}
+.card.ch{border-top:3px solid var(--china);background:#fff8f8}
+.card.slo{border-top:3px solid var(--slo)}.card.ams{border-top:3px solid var(--sky)}
+.card.cph{border-top:3px solid #d09020}
+.chd{padding:0.7rem 0.88rem 0.58rem;display:flex;align-items:flex-start;gap:0.58rem;border-bottom:1px solid #ede5d8}
+.card.ch .chd{border-bottom-color:#f0c8c8}
+.dn{font-family:'Cormorant Garamond',serif;font-size:1.28rem;font-weight:700;color:var(--gold);line-height:1;min-width:1.6rem}
+.card.bud .dn{color:var(--bud)}.card.ber .dn{color:#666}.card.sw .dn{color:var(--sw)}
+.card.ch .dn{color:var(--china)}.card.slo .dn{color:var(--slo)}
+.card.ams .dn{color:var(--sky)}.card.cph .dn{color:#c07010}
 .di{flex:1}
-.dd{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
-.dl{font-family:'Cormorant Garamond',serif;font-size:1.02rem;font-weight:600;margin-top:0.07rem;line-height:1.2}
-.fl{font-size:1.35rem}
-.cb{padding:0.72rem 1rem;font-size:0.79rem;line-height:1.65;color:#3a3530}
-.ti{display:flex;align-items:flex-start;gap:0.32rem;margin-top:0.42rem;padding-top:0.42rem;border-top:1px dashed var(--border);font-size:0.71rem;color:var(--muted)}
-.tag{display:inline-block;background:var(--parchment);border:1px solid var(--border);border-radius:2px;font-size:0.59rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:0.11rem 0.38rem;color:var(--muted);margin-top:0.26rem;margin-right:0.16rem}
+.dd{font-size:0.59rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
+.dl{font-family:'Cormorant Garamond',serif;font-size:0.96rem;font-weight:600;margin-top:0.06rem;line-height:1.2}
+.fl{font-size:1.22rem}
+.cb{padding:0.65rem 0.88rem;font-size:0.76rem;line-height:1.65;color:#3a3530}
+.card.ch .cb{color:#3a2020}
+.ti{display:flex;align-items:flex-start;gap:0.26rem;margin-top:0.35rem;padding-top:0.35rem;border-top:1px dashed var(--border);font-size:0.68rem;color:var(--muted)}
+.tag{display:inline-block;background:var(--parchment);border:1px solid var(--border);border-radius:2px;font-size:0.56rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:0.09rem 0.32rem;color:var(--muted);margin-top:0.2rem;margin-right:0.13rem}
 .tag.must{background:#fff3e8;border-color:#e8b07a;color:var(--rust)}
 .tag.tr{background:#e8f0f5;border-color:#a0bdd0;color:var(--sky)}
-.tag.sw{background:#e8f3e8;border-color:#8bbf8e;color:var(--sage)}
-.tag.sl{background:var(--sl-light);border-color:#c87aaa;color:var(--sl)}
-.tag.bn{background:#fffbe0;border-color:#d4b840;color:#7a5800}
+.tag.sw{background:#e0eef8;border-color:#80aed0;color:var(--sw)}
+.tag.bud{background:#f5ece0;border-color:#c0855a;color:var(--bud)}
+.tag.ber{background:#f0f0f0;border-color:#888;color:#555}
+.tag.ch{background:#fff0f0;border-color:#f09090;color:var(--china)}
+.tag.slo{background:#eaf5ee;border-color:#80c8a0;color:var(--slo)}
+.tag.ams{background:#e8f0f8;border-color:#80a8c8;color:var(--sky)}
+.tag.cph{background:#fff8e0;border-color:#e0c060;color:#c07010}
+.tag.long{background:#ffeee8;border-color:#f0a080;color:#a03010}
+.tag.day{background:#fffbe0;border-color:#d4a030;color:#7a5000}
+.tag.sister{background:#fce8f8;border-color:#d080c0;color:#8a2070}
 
-.trow{display:flex;align-items:flex-start;gap:0.58rem;background:#edf3f8;border:1px dashed #a0bdd0;border-radius:4px;padding:0.52rem 0.88rem;margin:0.45rem 0;font-size:0.77rem;color:var(--sky);font-weight:500}
-.trow.sl{background:#faf0f5;border-color:#c87aaa;color:var(--sl)}
+.trow{display:flex;align-items:flex-start;gap:0.5rem;background:#edf3f8;border:1px dashed #a0bdd0;border-radius:4px;padding:0.44rem 0.78rem;margin:0.36rem 0;font-size:0.73rem;color:var(--sky);font-weight:500}
+.trow.ok{background:#f0f8f0;border-color:#90c890;color:#2a6030}
+.trow.warn{background:#fffae0;border-color:#d4a030;color:#7a5000}
+.trow.ch{background:#fff0f0;border-color:#f09090;color:#8a1020}
+.trow.gold{background:#fff8e8;border-color:var(--gold);color:#7a5000}
+.trow.sister{background:#fce8f8;border-color:#d080c0;color:#6a1850}
 
-table{width:100%;border-collapse:collapse;font-size:0.77rem;margin-top:0.75rem}
-th{background:var(--ink);color:var(--gold);padding:0.48rem 0.78rem;text-align:left;font-weight:500;font-size:0.64rem;letter-spacing:0.08em;text-transform:uppercase}
-td{padding:0.48rem 0.78rem;border-bottom:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:0.73rem;margin-top:0.65rem}
+th{background:var(--ink);color:var(--gold);padding:0.42rem 0.68rem;text-align:left;font-weight:500;font-size:0.59rem;letter-spacing:0.08em;text-transform:uppercase}
+td{padding:0.42rem 0.68rem;border-bottom:1px solid var(--border)}
 tr:nth-child(even) td{background:var(--parchment)}
-tr.slr td{background:var(--sl-light)}
+tr.budr td{background:#fdf5ee}
+tr.berr td{background:#f5f5f5}
+tr.swr td{background:#eef4fb;font-weight:500}
+tr.cphr td{background:#fff8e0}
+tr.amsr td{background:#e8f0f8}
+tr.chr td{background:#fff0f0}
+tr.slor td{background:#eaf5ee}
+tr.tot td{background:#ece8d8;font-weight:700}
 .dt{color:var(--rust);font-weight:500}
-tr.slr .dt{color:var(--sl)}
-tr.tot td{background:#ece8d8;font-weight:600}
+tr.budr .dt{color:var(--bud)}
+tr.berr .dt{color:#555}
+tr.swr .dt{color:var(--sw)}
+tr.cphr .dt{color:#c07010}
+tr.amsr .dt{color:var(--sky)}
+tr.chr .dt{color:var(--china)}
+tr.slor .dt{color:var(--slo)}
 
-.tips{background:var(--parchment);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:1.1rem 1.35rem;margin-top:1.4rem;font-size:0.81rem;line-height:1.75}
-.tips.sl{border-left-color:var(--sl);background:var(--sl-light)}
-.tips h3{font-family:'Cormorant Garamond',serif;font-size:1.02rem;margin-bottom:0.5rem;color:var(--rust);font-weight:600}
-.tips.sl h3{color:var(--sl)}
-.tips ul{padding-left:1.05rem}
-.tips li{margin-bottom:0.28rem}
+.tips{background:var(--parchment);border:1px solid var(--border);border-left:4px solid var(--gold);border-radius:4px;padding:0.95rem 1.2rem;margin-top:1.1rem;font-size:0.77rem;line-height:1.75}
+.tips.ch{border-left-color:var(--china);background:#fff8f8}
+.tips h3{font-family:'Cormorant Garamond',serif;font-size:0.96rem;margin-bottom:0.42rem;color:var(--rust);font-weight:600}
+.tips.ch h3{color:var(--china)}
+.tips ul{padding-left:0.9rem}.tips li{margin-bottom:0.25rem}
 
-footer{text-align:center;padding:2rem;color:var(--muted);font-size:0.71rem;border-top:1px solid var(--border);margin-top:2rem}
+footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:0.65rem;border-top:1px solid var(--border);margin-top:2rem}
 
 @media(max-width:580px){
-  .stat{padding:0.65rem 0.8rem}.sn{font-size:1.35rem}
+  .stat{padding:0.55rem 0.65rem}.sn{font-size:1.22rem}
   .grid{grid-template-columns:1fr}.strip{display:none}
+  .fb-inner{flex-direction:column}
 }
 
-/* MAP ANIMATIONS */
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes popin{0%{opacity:0;transform:scale(0)}65%{opacity:1;transform:scale(1.5)}100%{opacity:1;transform:scale(1)}}
 @keyframes fadein{0%{opacity:0}100%{opacity:1}}
-
 .rp{fill:none;stroke-linecap:round;stroke-linejoin:round}
-.r-road{stroke:#f0946a;stroke-width:2.5;opacity:0.9}
-.r-fly{stroke:#6cc8f0;stroke-width:2;stroke-dasharray:6 4;opacity:0.88}
-.r-sl{stroke:#e880c0;stroke-width:2.2;stroke-dasharray:6 4;opacity:0.85}
-
+.r-road{stroke:#f0946a;stroke-width:2.5;opacity:0.92}
+.r-fly{stroke:#6cc8f0;stroke-width:2;stroke-dasharray:6 4;opacity:0.9}
+.r-ret{stroke:#f080a0;stroke-width:2;stroke-dasharray:6 4;opacity:0.85}
 .cdot{opacity:0;transform-origin:center center}
 .clbl{opacity:0;font-family:'Jost',sans-serif;font-weight:300}
-</style>
+
+    .cmbtn{display:inline-flex;align-items:center;gap:0.28rem;border-radius:3px;padding:0.3rem 0.7rem;font-size:0.68rem;font-weight:500;text-decoration:none;transition:opacity .15s}
+    .cmbtn:hover{opacity:0.82}
+    .cmbtn.dr{background:#b8461e;color:#fff}
+    .cmbtn.tr{background:#2e6080;color:#fff}
+    .cmbtn.wk{background:#4a7a52;color:#fff}
+    </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="hi">
-  <div class="eyebrow">✈ Auckland → Europe → Sri Lanka · June–July 2025</div>
-  <h1>Avi's Family Trip to Europe<br><em>The Grand Journey — Europe &amp; Ceylon</em></h1>
-  <p class="sub">Central Europe Road Trip · Lourdes Pilgrimage · Scandinavia · Sri Lanka</p>
+  <div class="eyebrow">✈ Auckland → Beijing → Europe → Beijing → Auckland · July–August 2026</div>
+  <h1>Avi's Family Trip to Europe<br><em>The Grand Journey</em></h1>
+  <p class="sub">25 nights · every date locked · Amsterdam 1N · Copenhagen 1N · Gothenburg 2N with sister 💙</p>
   <div class="pills">
-    <span class="pill">Depart AKL 24 Jun</span>
-    <span class="pill">Arrive Munich 25 Jun</span>
-    <span class="pill">Rental Car Munich ✅</span>
-    <span class="pill go">3 Days Sweden ✅</span>
-    <span class="pill sl">Sri Lanka 18–24 Jul</span>
-    <span class="pill go">Home AKL 24 Jul ✅</span>
+    <span class="pill ch">Beijing both ways 🇨🇳</span>
+    <span class="pill">Munich 11 Jul → 6 Aug</span>
+    <span class="pill go">Amsterdam 1 night ✅</span>
+    <span class="pill go">Copenhagen 1 night ✅</span>
+    <span class="pill go">Gothenburg 2 nights ✅</span>
+    <span class="pill go">Sister visit 💙</span>
+    <span class="pill warn">Fly GOT→MUC 5 Aug · Day room Munich · CA962 6 Aug 13:00</span>
   </div>
 </div>
 </header>
 
-<!-- STATS -->
-<div class="stats">
-  <div class="stat"><div class="sn">30</div><div class="sl2">Nights Away</div></div>
-  <div class="stat"><div class="sn">24</div><div class="sl2">Days Europe</div></div>
-  <div class="stat"><div class="sn">6</div><div class="sl2">Nights Sri Lanka</div></div>
-  <div class="stat"><div class="sn">3 ✅</div><div class="sl2">Days Sweden</div></div>
-  <div class="stat"><div class="sn">10</div><div class="sl2">Countries</div></div>
-  <div class="stat"><div class="sn">24 Jul ✅</div><div class="sl2">Back in AKL</div></div>
+<div class="fbanner">
+  <div class="fb-inner">
+    <div class="fb ch">
+      <div class="fb-lbl">🇨🇳 Outbound · Air China · Confirmed</div>
+      <div class="fb-rt">Auckland → Beijing → Munich</div>
+      <div class="fb-det">
+        <strong>CA784</strong> AKL 19:30 Thu 9 Jul → PEK 04:40 Fri 10 Jul · 13h 10m · B787-900<br>
+        <strong>22h 10m Beijing</strong> — Forbidden City + Tiananmen Square<br>
+        <strong>CA961</strong> PEK 02:50 Sat 11 Jul → MUC 07:05 · 10h 15m · B777-300ER
+      </div>
+    </div>
+    <div class="fb">
+      <div class="fb-lbl">✈ Inbound · Air China · Confirmed</div>
+      <div class="fb-rt">Munich → Beijing → Auckland</div>
+      <div class="fb-det">
+        <strong>CA962</strong> MUC 13:00 Thu 6 Aug → PEK 04:45 Fri 7 Aug · 9h 45m<br>
+        <strong>19h 20m Beijing</strong> — Great Wall at Mutianyu<br>
+        <strong>CA783</strong> PEK 00:05 Sat 8 Aug → AKL 16:30 · 12h 25m
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- ANIMATED MAP -->
+<div class="nc-wrap">
+  <div class="nc-inner">
+    <div class="nc-title">25 nights · every night verified · 3 changes from previous plan explained below</div>
+    <div class="nc-grid">
+      <span class="nci">Munich ×1</span>
+      <span class="nci">Hallstatt ×1</span>
+      <span class="nci">Prague ×2</span>
+      <span class="nci">Vienna ×1</span>
+      <span class="nci">Budapest ×1</span>
+      <span class="nci day">Bled = day stop ✦</span>
+      <span class="nci">Venice ×2</span>
+      <span class="nci">Florence ×1</span>
+      <span class="nci day">Naples = day trip ✦</span>
+      <span class="nci">Rome ×3</span>
+      <span class="nci">Milan ×1</span>
+      <span class="nci">Zermatt ×1</span>
+      <span class="nci">Interlaken ×2</span>
+      <span class="nci">Zürich ×1</span>
+      <span class="nci">Paris ×1</span>
+      <span class="nci day">Lourdes ×1 ✦</span>
+      <span class="nci ams">Amsterdam ×1 ✅</span>
+      <span class="nci">Berlin ×2</span>
+      <span class="nci cph">Copenhagen ×1 ✅</span>
+      <span class="nci sw">Gothenburg ×2 💙</span>
+      <span class="nci bold">= 25 nights ✅</span>
+    </div>
+    <div style="margin-top:0.4rem;font-size:0.62rem;color:var(--muted)">✦ Changed from previous plan: Bled overnight→day stop · Naples overnight→Rome day trip · Lourdes 2→1 night. Each saves 1 night = 3 nights freed up for Amsterdam(1) + Copenhagen(1) + Gothenburg(2 was already planned but now confirmed with sister).</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="sn">25</div><div class="sl2">Nights · Locked</div></div>
+  <div class="stat"><div class="sn">1 ✅</div><div class="sl2">Night Amsterdam</div></div>
+  <div class="stat"><div class="sn">1 ✅</div><div class="sl2">Night Copenhagen</div></div>
+  <div class="stat"><div class="sn">2 💙</div><div class="sl2">Nights Gothenburg</div></div>
+  <div class="stat"><div class="sn">06:30</div><div class="sl2">GOT→MUC · 5 Aug</div></div>
+  <div class="stat"><div class="sn">13:00</div><div class="sl2">CA962 · 6 Aug</div></div>
+</div>
+
 <div class="map-wrap">
-  <div class="map-title">✦ Your Route Across the World ✦</div>
+  <div class="map-title">✦ Complete Route — Every Date Confirmed ✦</div>
   <svg id="rmap" viewBox="0 0 920 500" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <radialGradient id="bg" cx="38%" cy="42%" r="72%">
-        <stop offset="0%" stop-color="#1a2e48"/>
-        <stop offset="100%" stop-color="#0c1520"/>
+      <radialGradient id="bg" cx="35%" cy="40%" r="72%">
+        <stop offset="0%" stop-color="#1a2e48"/><stop offset="100%" stop-color="#0c1520"/>
       </radialGradient>
       <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-        <feGaussianBlur stdDeviation="3" result="b"/>
-        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
       </filter>
       <filter id="sglow" x="-80%" y="-80%" width="260%" height="260%">
-        <feGaussianBlur stdDeviation="5" result="b"/>
-        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
       </filter>
     </defs>
-
-    <!-- Ocean -->
     <rect width="920" height="500" fill="url(#bg)"/>
-
-    <!-- Grid lines -->
     <g stroke="rgba(255,255,255,0.03)" stroke-width="0.5">
       <line x1="0" y1="125" x2="920" y2="125"/><line x1="0" y1="250" x2="920" y2="250"/>
       <line x1="0" y1="375" x2="920" y2="375"/><line x1="230" y1="0" x2="230" y2="500"/>
       <line x1="460" y1="0" x2="460" y2="500"/><line x1="690" y1="0" x2="690" y2="500"/>
     </g>
+    <polygon points="62,188 118,180 126,204 114,230 92,244 68,238 58,220 58,200" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="100,160 170,152 188,166 192,190 180,208 152,214 128,204 108,182" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="88,126 116,120 122,140 108,154 90,154 78,140" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="174,54 208,46 244,58 256,76 246,104 228,120 206,126 184,120 174,102 172,76" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="178,118 198,114 204,124 196,134 178,130" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="155,147 184,140 186,156 172,162 155,158" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="170,152 234,144 260,150 266,174 252,190 220,196 188,190 168,178 162,164" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="244,174 292,164 304,178 298,196 276,204 250,198 242,184" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="242,192 264,188 272,200 266,212 248,210 240,200" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="170,178 196,174 202,186 188,194 172,190" fill="#2c4024" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="170,188 198,184 216,196 220,218 208,242 194,258 180,272 166,276 158,270 156,254 162,232 166,212 168,198" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="218,132 270,124 298,134 300,156 278,164 248,158 220,148" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="58,253 170,244 222,248 266,252 304,248 342,254 362,270 356,290 318,300 270,296 212,294 154,292 100,288 62,280" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="258,192 316,182 350,186 362,200 354,214 324,218 296,214 264,206" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <polygon points="580,80 680,70 740,90 760,120 740,150 700,160 650,155 600,140 570,115 572,95" fill="#243320" stroke="#182618" stroke-width="0.7"/>
 
-    <!-- LANDMASSES -->
-    <polygon points="148,168 196,162 203,183 192,206 173,218 153,213 145,197 145,178" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="183,143 240,137 255,148 259,169 248,184 224,189 203,181 187,162" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="167,111 192,106 198,124 186,136 170,137 159,124" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="152,118 161,115 162,128 154,130" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="242,57 268,51 296,62 307,78 299,103 284,117 265,123 248,118 239,102 237,80" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="245,115 263,111 269,121 260,130 246,126" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="223,130 249,125 251,139 238,144 223,140" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="237,138 289,131 309,138 314,158 303,173 278,178 255,172 237,162 232,150" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="237,162 261,159 267,170 254,178 239,175" fill="#2c4024" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="237,170 261,167 277,178 281,197 271,219 259,235 247,249 234,254 227,249 225,234 229,213 233,194 235,181" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="285,119 323,112 349,121 351,141 333,148 307,143 287,134" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="293,158 329,150 339,163 333,179 314,186 295,181 289,167" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="305,176 360,168 392,171 403,183 396,197 370,201 344,199 315,191" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="147,229 267,220 317,224 360,229 402,224 442,231 462,249 457,269 420,279 365,275 300,273 240,273 191,269 157,261 147,247" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="390,196 432,188 450,197 454,216 447,235 430,241 408,237 394,221" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="408,236 450,228 464,244 458,269 441,279 419,273 405,259 403,243" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="498,190 546,182 560,201 556,229 544,256 526,273 506,279 490,269 484,249 486,220 492,204" fill="#243320" stroke="#182618" stroke-width="0.7"/>
-    <ellipse cx="534" cy="293" rx="9" ry="12" fill="#2c4024" stroke="#182618" stroke-width="0.7"/>
-    <polygon points="620,190 665,185 680,200 678,220 660,228 640,222 622,208" fill="#243320" stroke="#182618" stroke-width="0.7"/>
+    <!-- ROUTES -->
+    <path class="rp r-fly" stroke-dasharray="1200" stroke-dashoffset="1200" d="M910,420 Q820,280 700,130" style="animation:draw 1.2s 0.3s ease-out forwards"/>
+    <path class="rp r-fly" stroke-dasharray="1400" stroke-dashoffset="1400" d="M700,130 Q480,100 220,174" style="animation:draw 1.3s 1.6s ease-out forwards"/>
+    <path class="rp r-road" stroke-dasharray="3000" stroke-dashoffset="3000"
+      d="M220,174 Q234,175 248,176 Q246,164 244,152 Q251,158 258,165 Q275,170 292,175 Q264,190 220,190 Q207,190 194,190 Q189,198 184,206 Q183,213 185,220 Q184,226 185,220 Q179,213 172,207 Q174,198 176,190 Q179,186 182,178 Q181,181 180,182 Q173,182 167,182 Q177,177 186,172 Q203,173 220,174"
+      style="animation:draw 3.0s 3.1s ease forwards"/>
+    <path class="rp r-fly" stroke-dasharray="400" stroke-dashoffset="400" d="M220,174 Q179,174 138,180" style="animation:draw 0.6s 6.3s ease forwards"/>
+    <path class="rp r-road" stroke-dasharray="350" stroke-dashoffset="350" d="M138,180 Q128,191 120,202 Q129,193 138,184" style="animation:draw 0.5s 7.1s ease forwards"/>
+    <path class="rp r-road" stroke-dasharray="330" stroke-dashoffset="330" d="M120,202 Q138,185 158,150" style="animation:draw 0.45s 7.8s ease forwards"/>
+    <path class="rp r-road" stroke-dasharray="350" stroke-dashoffset="350" d="M158,150 Q187,145 216,140" style="animation:draw 0.4s 8.5s ease forwards"/>
+    <path class="rp r-fly" stroke-dasharray="260" stroke-dashoffset="260" d="M216,140 Q206,131 196,122" style="animation:draw 0.3s 9.1s ease forwards"/>
+    <path class="rp r-road" stroke-dasharray="210" stroke-dashoffset="210" d="M196,122 Q192,115 188,108" style="animation:draw 0.28s 9.6s ease forwards"/>
+    <path class="rp r-ret" stroke-dasharray="520" stroke-dashoffset="520" d="M188,108 Q204,140 220,174" style="animation:draw 0.6s 10.1s ease forwards"/>
+    <path class="rp r-ret" stroke-dasharray="1400" stroke-dashoffset="1400" d="M220,174 Q480,100 700,130" style="animation:draw 1.2s 10.9s ease-out forwards"/>
+    <path class="rp r-ret" stroke-dasharray="1200" stroke-dashoffset="1200" d="M700,130 Q820,280 910,420" style="animation:draw 1.1s 12.2s ease-out forwards"/>
 
-    <!--
-      KEY CITY COORDINATES:
-      Auckland:     912, 418
-      Munich:       274, 150
-      Prague:       298, 142
-      Vienna:       313, 155
-      Venice:       262, 170
-      Florence:     252, 185
-      Naples:       257, 205
-      Rome:         252, 199
-      Pisa:         243, 186
-      Milan:        248, 170
-      Interlaken:   248, 160
-      Lausanne:     238, 162
-      Zurich:       253, 153
-      Paris:        210, 160
-      Lourdes:      193, 181
-      Amsterdam:    228, 132
-      Copenhagen:   260, 113
-      Stockholm:    276, 105
-      Dubai:        440, 233
-      Singapore:    680, 340
-      Colombo:      534, 293
-    -->
+    <!-- DOTS -->
+    <circle cx="910" cy="420" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.35s 0.1s forwards"/>
+    <text x="895" y="433" font-size="6.5" text-anchor="middle" fill="rgba(244,237,224,0.55)" class="clbl" style="animation:fadein 0.3s 0.3s forwards">Auckland</text>
+    <circle cx="700" cy="130" r="6" fill="#e84060" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#glow)" style="animation:popin 0.4s 1.4s forwards"/>
+    <text x="700" y="122" font-size="7.5" text-anchor="middle" fill="rgba(240,120,140,0.92)" class="clbl" style="animation:fadein 0.3s 1.6s forwards">Beijing 🇨🇳</text>
+    <circle cx="220" cy="174" r="7" fill="#e8c96a" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#glow)" style="animation:popin 0.4s 3.0s forwards"/>
+    <text x="220" y="188" font-size="8" text-anchor="middle" fill="rgba(244,237,224,0.92)" class="clbl" style="animation:fadein 0.3s 3.2s forwards">Munich 🚗</text>
+    <circle cx="248" cy="176" r="3.5" fill="#78c878" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 3.3s forwards"/>
+    <text x="255" y="174" font-size="6.5" fill="rgba(120,200,120,0.9)" class="clbl" style="animation:fadein 0.3s 3.5s forwards">Hallstatt</text>
+    <circle cx="244" cy="152" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 3.4s forwards"/>
+    <text x="250" y="150" font-size="6.5" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 3.6s forwards">Prague</text>
+    <circle cx="258" cy="165" r="3.8" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 3.7s forwards"/>
+    <text x="264" y="163" font-size="6.5" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 3.9s forwards">Vienna</text>
+    <circle cx="292" cy="175" r="4.5" fill="#c8854a" stroke="#0c1520" stroke-width="1.5" class="cdot" filter="url(#glow)" style="animation:popin 0.35s 4.0s forwards"/>
+    <text x="299" y="173" font-size="6.5" fill="rgba(220,160,100,0.9)" class="clbl" style="animation:fadein 0.3s 4.2s forwards">Budapest</text>
+    <circle cx="264" cy="190" r="3" fill="#50c890" stroke="#0c1520" stroke-width="1.2" class="cdot" style="animation:popin 0.3s 4.3s forwards"/>
+    <text x="270" y="188" font-size="5.5" fill="rgba(80,200,144,0.75)" class="clbl" style="animation:fadein 0.3s 4.5s forwards">Bled*</text>
+    <circle cx="194" cy="190" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 4.6s forwards"/>
+    <text x="200" y="188" font-size="6.5" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 4.8s forwards">Venice</text>
+    <circle cx="184" cy="206" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 4.9s forwards"/>
+    <text x="190" y="204" font-size="6.5" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 5.1s forwards">Florence</text>
+    <circle cx="190" cy="234" r="2.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.2" class="cdot" style="animation:popin 0.3s 5.2s forwards"/>
+    <text x="196" y="232" font-size="5.5" fill="rgba(244,237,224,0.65)" class="clbl" style="animation:fadein 0.3s 5.4s forwards">Naples*</text>
+    <circle cx="185" cy="220" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" filter="url(#glow)" style="animation:popin 0.3s 5.3s forwards"/>
+    <text x="177" y="230" font-size="6.5" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 5.5s forwards">Rome ×3</text>
+    <circle cx="176" cy="190" r="2.8" fill="#e8c96a" stroke="#0c1520" stroke-width="1.2" class="cdot" style="animation:popin 0.3s 5.6s forwards"/>
+    <text x="164" y="188" font-size="6" text-anchor="end" fill="rgba(244,237,224,0.7)" class="clbl" style="animation:fadein 0.3s 5.8s forwards">Milan</text>
+    <circle cx="182" cy="178" r="3.5" fill="#78c878" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 5.9s forwards"/>
+    <text x="169" y="176" font-size="6.5" text-anchor="end" fill="rgba(120,200,120,0.9)" class="clbl" style="animation:fadein 0.3s 6.1s forwards">Zermatt</text>
+    <circle cx="180" cy="182" r="3.2" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 6.0s forwards"/>
+    <text x="167" y="183" font-size="6" text-anchor="end" fill="rgba(244,237,224,0.72)" class="clbl" style="animation:fadein 0.3s 6.2s forwards">Interlaken</text>
+    <circle cx="186" cy="172" r="3" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 6.2s forwards"/>
+    <text x="192" y="170" font-size="6.5" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 6.4s forwards">Zürich</text>
+    <circle cx="138" cy="180" r="5.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)" style="animation:popin 0.4s 6.6s forwards"/>
+    <text x="138" y="173" font-size="7.5" text-anchor="middle" fill="rgba(244,237,224,0.92)" class="clbl" style="animation:fadein 0.3s 6.8s forwards">Paris</text>
+    <circle cx="120" cy="202" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot" style="animation:popin 0.3s 7.3s forwards"/>
+    <text x="112" y="200" font-size="6.5" text-anchor="end" fill="rgba(244,237,224,0.78)" class="clbl" style="animation:fadein 0.3s 7.5s forwards">Lourdes</text>
+    <circle cx="158" cy="150" r="4.5" fill="#6cc8f0" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)" style="animation:popin 0.35s 8.0s forwards"/>
+    <text x="148" y="145" font-size="7" text-anchor="end" fill="rgba(120,200,240,0.9)" class="clbl" style="animation:fadein 0.3s 8.2s forwards">Amsterdam ✅</text>
+    <circle cx="216" cy="140" r="4.8" fill="#b8b8b8" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)" style="animation:popin 0.38s 8.7s forwards"/>
+    <text x="224" y="138" font-size="7" fill="rgba(200,200,200,0.9)" class="clbl" style="animation:fadein 0.3s 8.9s forwards">Berlin</text>
+    <circle cx="196" cy="122" r="4.5" fill="#e8a030" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)" style="animation:popin 0.35s 9.3s forwards"/>
+    <text x="186" y="117" font-size="7" text-anchor="end" fill="rgba(240,180,80,0.92)" class="clbl" style="animation:fadein 0.3s 9.5s forwards">Copenhagen ✅</text>
+    <circle cx="188" cy="108" r="6" fill="#f090d8" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#sglow)" style="animation:popin 0.4s 9.8s forwards"/>
+    <text x="183" y="99" font-size="8" text-anchor="middle" fill="rgba(240,160,220,0.95)" class="clbl" style="animation:fadein 0.3s 10.0s forwards">Gothenburg 💙×2</text>
+    <circle cx="220" cy="174" r="9" fill="#e8c96a" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#sglow)" style="animation:popin 0.5s 10.8s forwards"/>
+    <text x="220" y="192" font-size="7.5" text-anchor="middle" fill="rgba(244,237,224,0.92)" class="clbl" style="animation:fadein 0.4s 11.0s forwards">Munich · 6 Aug ✅</text>
+    <circle cx="700" cy="130" r="7" fill="#e84060" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#sglow)" style="animation:popin 0.45s 12.0s forwards"/>
+    <text x="700" y="122" font-size="7" text-anchor="middle" fill="rgba(240,120,140,0.9)" class="clbl" style="animation:fadein 0.3s 12.2s forwards">Beijing · Great Wall</text>
+    <circle cx="910" cy="420" r="6.5" fill="#90e890" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#glow)" style="animation:popin 0.5s 13.4s forwards"/>
+    <text x="894" y="436" font-size="7" text-anchor="middle" fill="rgba(144,232,144,0.9)" class="clbl" style="animation:fadein 0.4s 13.6s forwards">Auckland 🏠 8 Aug</text>
 
-    <!-- 1. Fly: Auckland → Munich (great arc west) -->
-    <path class="rp r-fly" stroke-dasharray="2800" stroke-dashoffset="2800"
-      d="M912,418 Q750,180 520,100 Q400,62 274,150"
-      style="animation:draw 2s 0.4s cubic-bezier(0.4,0,0.2,1) forwards"/>
-
-    <!-- 2. Road loop: Munich→Prague→Vienna→Venice→Florence→Naples→Rome→Pisa→Milan→Alps/Interlaken→Lausanne→Zurich→Munich -->
-    <path class="rp r-road" stroke-dasharray="2400" stroke-dashoffset="2400"
-      d="M274,150 Q286,146 298,142 Q306,149 313,155 Q290,165 262,170 Q257,178 252,185 Q254,195 257,205 Q254,202 252,199 Q247,192 243,186 Q245,178 248,170 Q248,165 248,160 Q243,161 238,162 Q245,157 253,153 Q264,151 274,150"
-      style="animation:draw 2.8s 2.6s ease forwards"/>
-
-    <!-- 3. Fly: Munich → Paris -->
-    <path class="rp r-fly" stroke-dasharray="450" stroke-dashoffset="450"
-      d="M274,150 Q242,150 210,160"
-      style="animation:draw 0.7s 5.6s ease forwards"/>
-
-    <!-- 4. Train: Paris ⇄ Lourdes loop -->
-    <path class="rp r-road" stroke-dasharray="500" stroke-dashoffset="500"
-      d="M210,160 Q200,171 193,181 Q200,173 210,164"
-      style="animation:draw 0.6s 6.5s ease forwards"/>
-
-    <!-- 5. Train: Paris → Amsterdam -->
-    <path class="rp r-road" stroke-dasharray="380" stroke-dashoffset="380"
-      d="M210,160 Q219,146 228,132"
-      style="animation:draw 0.4s 7.3s ease forwards"/>
-
-    <!-- 6. Fly: Amsterdam → Copenhagen -->
-    <path class="rp r-fly" stroke-dasharray="350" stroke-dashoffset="350"
-      d="M228,132 Q244,120 260,113"
-      style="animation:draw 0.4s 7.9s ease forwards"/>
-
-    <!-- 7. Train/Fly: Copenhagen → Stockholm -->
-    <path class="rp r-fly" stroke-dasharray="260" stroke-dashoffset="260"
-      d="M260,113 Q268,108 276,105"
-      style="animation:draw 0.3s 8.5s ease forwards"/>
-
-    <!-- 8. Fly: Stockholm → Colombo via Dubai -->
-    <path class="rp r-sl" stroke-dasharray="1800" stroke-dashoffset="1800"
-      d="M276,105 Q380,155 440,233 Q492,270 534,293"
-      style="animation:draw 1.5s 9.0s ease-out forwards"/>
-
-    <!-- 9. Fly: Colombo → Auckland via Singapore (return) -->
-    <path class="rp r-sl" stroke-dasharray="2600" stroke-dashoffset="2600"
-      d="M534,293 Q620,310 680,340 Q800,390 912,418"
-      style="animation:draw 1.8s 10.6s ease-out forwards"/>
-
-    <!-- CITY DOTS & LABELS -->
-
-    <!-- Auckland (departure) -->
-    <circle cx="912" cy="418" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.4s 0.2s forwards"/>
-    <text x="895" y="432" font-size="7" text-anchor="middle" fill="rgba(244,237,224,0.6)" class="clbl"
-      style="animation:fadein 0.3s 0.5s forwards">Auckland</text>
-
-    <!-- Munich -->
-    <circle cx="274" cy="150" r="6" fill="#e8c96a" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)"
-      style="animation:popin 0.4s 2.4s forwards"/>
-    <text x="274" y="162" font-size="8" text-anchor="middle" fill="rgba(244,237,224,0.85)" class="clbl"
-      style="animation:fadein 0.3s 2.6s forwards">Munich 🚗</text>
-
-    <!-- Prague -->
-    <circle cx="298" cy="142" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 2.9s forwards"/>
-    <text x="303" y="140" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 3.1s forwards">Prague</text>
-
-    <!-- Vienna -->
-    <circle cx="313" cy="155" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 3.2s forwards"/>
-    <text x="318" y="153" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 3.4s forwards">Vienna</text>
-
-    <!-- Venice -->
-    <circle cx="262" cy="170" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 3.5s forwards"/>
-    <text x="267" y="168" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 3.7s forwards">Venice</text>
-
-    <!-- Florence -->
-    <circle cx="252" cy="185" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 3.8s forwards"/>
-    <text x="257" y="183" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 4.0s forwards">Florence</text>
-
-    <!-- Naples -->
-    <circle cx="257" cy="205" r="3" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 4.1s forwards"/>
-    <text x="262" y="203" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 4.3s forwards">Naples</text>
-
-    <!-- Rome -->
-    <circle cx="252" cy="199" r="3" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 4.4s forwards"/>
-    <text x="244" y="208" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 4.6s forwards">Rome</text>
-
-    <!-- Milan -->
-    <circle cx="248" cy="170" r="3" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 4.7s forwards"/>
-    <text x="234" y="168" font-size="6.5" text-anchor="end" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 4.9s forwards">Milan</text>
-
-    <!-- Swiss Alps / Interlaken -->
-    <circle cx="248" cy="160" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 5.0s forwards"/>
-    <text x="234" y="157" font-size="6.5" text-anchor="end" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 5.2s forwards">Alps / Interlaken</text>
-
-    <!-- Zurich -->
-    <circle cx="253" cy="153" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 5.2s forwards"/>
-    <text x="258" y="151" font-size="6.5" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 5.4s forwards">Zürich</text>
-
-    <!-- Paris -->
-    <circle cx="210" cy="160" r="5.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)"
-      style="animation:popin 0.4s 5.9s forwards"/>
-    <text x="210" y="154" font-size="8" text-anchor="middle" fill="rgba(244,237,224,0.85)" class="clbl"
-      style="animation:fadein 0.3s 6.1s forwards">Paris</text>
-
-    <!-- Lourdes -->
-    <circle cx="193" cy="181" r="3.5" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 6.7s forwards"/>
-    <text x="186" y="179" font-size="6.5" text-anchor="end" fill="rgba(244,237,224,0.72)" class="clbl"
-      style="animation:fadein 0.3s 6.9s forwards">Lourdes</text>
-
-    <!-- Amsterdam -->
-    <circle cx="228" cy="132" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 7.5s forwards"/>
-    <text x="218" y="129" font-size="7" text-anchor="end" fill="rgba(244,237,224,0.75)" class="clbl"
-      style="animation:fadein 0.3s 7.7s forwards">Amsterdam</text>
-
-    <!-- Copenhagen -->
-    <circle cx="260" cy="113" r="4" fill="#e8c96a" stroke="#0c1520" stroke-width="1.5" class="cdot"
-      style="animation:popin 0.3s 8.1s forwards"/>
-    <text x="253" y="108" font-size="7" text-anchor="end" fill="rgba(244,237,224,0.75)" class="clbl"
-      style="animation:fadein 0.3s 8.3s forwards">Copenhagen</text>
-
-    <!-- Stockholm (green - Sweden highlight) -->
-    <circle cx="276" cy="105" r="6" fill="#78e878" stroke="#0c1520" stroke-width="1.8" class="cdot" filter="url(#glow)"
-      style="animation:popin 0.4s 8.7s forwards"/>
-    <text x="276" y="98" font-size="8" text-anchor="middle" fill="rgba(144,232,144,0.88)" class="clbl"
-      style="animation:fadein 0.3s 8.9s forwards">Stockholm ✅</text>
-
-    <!-- Dubai (layover) -->
-    <circle cx="440" cy="233" r="3" fill="rgba(220,180,80,0.55)" stroke="#0c1520" stroke-width="1.2" class="cdot"
-      style="animation:popin 0.3s 9.6s forwards"/>
-    <text x="446" y="231" font-size="6" fill="rgba(220,180,80,0.55)" class="clbl"
-      style="animation:fadein 0.3s 9.8s forwards">Dubai</text>
-
-    <!-- Colombo / Sri Lanka (pink) -->
-    <circle cx="534" cy="293" r="7" fill="#f080c0" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#sglow)"
-      style="animation:popin 0.5s 10.4s forwards"/>
-    <text x="534" y="307" font-size="8.5" text-anchor="middle" fill="rgba(240,140,200,0.9)" class="clbl"
-      style="animation:fadein 0.4s 10.7s forwards">Sri Lanka 🌴</text>
-
-    <!-- Singapore (return layover) -->
-    <circle cx="680" cy="340" r="3" fill="rgba(220,180,80,0.55)" stroke="#0c1520" stroke-width="1.2" class="cdot"
-      style="animation:popin 0.3s 11.2s forwards"/>
-    <text x="686" y="338" font-size="6" fill="rgba(220,180,80,0.55)" class="clbl"
-      style="animation:fadein 0.3s 11.4s forwards">Singapore</text>
-
-    <!-- Auckland (return - glows green) -->
-    <circle cx="912" cy="418" r="6.5" fill="#90e890" stroke="#0c1520" stroke-width="2" class="cdot" filter="url(#glow)"
-      style="animation:popin 0.5s 12.5s forwards"/>
-    <text x="895" y="436" font-size="7.5" text-anchor="middle" fill="rgba(144,232,144,0.88)" class="clbl"
-      style="animation:fadein 0.4s 12.8s forwards">Auckland 🏠 24 Jul</text>
-
-    <!-- MAP LEGEND -->
-    <g transform="translate(16,476)">
-      <line x1="0" y1="6" x2="18" y2="6" stroke="#f0946a" stroke-width="2.5" stroke-linecap="round"/>
-      <text x="22" y="10" fill="rgba(244,237,224,0.45)" font-size="7.5" font-family="Jost,sans-serif">Road / Train</text>
-      <line x1="100" y1="6" x2="118" y2="6" stroke="#6cc8f0" stroke-width="2" stroke-dasharray="5 3"/>
-      <text x="122" y="10" fill="rgba(244,237,224,0.45)" font-size="7.5" font-family="Jost,sans-serif">Flight</text>
-      <line x1="162" y1="6" x2="180" y2="6" stroke="#e880c0" stroke-width="2.2" stroke-dasharray="5 3"/>
-      <text x="184" y="10" fill="rgba(244,237,224,0.45)" font-size="7.5" font-family="Jost,sans-serif">Sri Lanka leg</text>
-      <circle cx="256" cy="6" r="3.5" fill="#78e878"/>
-      <text x="262" y="10" fill="rgba(144,232,144,0.62)" font-size="7.5" font-family="Jost,sans-serif">Sweden (3 days ✅)</text>
+    <g transform="translate(14,476)">
+      <line x1="0" y1="6" x2="16" y2="6" stroke="#f0946a" stroke-width="2.4" stroke-linecap="round"/>
+      <text x="20" y="10" fill="rgba(244,237,224,0.4)" font-size="6.5" font-family="Jost,sans-serif">Road / Train</text>
+      <line x1="90" y1="6" x2="106" y2="6" stroke="#6cc8f0" stroke-width="2" stroke-dasharray="5 3"/>
+      <text x="110" y="10" fill="rgba(244,237,224,0.4)" font-size="6.5" font-family="Jost,sans-serif">Outbound</text>
+      <line x1="160" y1="6" x2="176" y2="6" stroke="#f080a0" stroke-width="2" stroke-dasharray="5 3"/>
+      <text x="180" y="10" fill="rgba(244,237,224,0.4)" font-size="6.5" font-family="Jost,sans-serif">Return</text>
+      <circle cx="230" cy="6" r="3" fill="#f090d8"/>
+      <text x="236" y="10" fill="rgba(240,160,220,0.7)" font-size="6.5" font-family="Jost,sans-serif">Gothenburg 💙</text>
+      <circle cx="310" cy="6" r="3" fill="#6cc8f0"/>
+      <text x="316" y="10" fill="rgba(120,200,240,0.7)" font-size="6.5" font-family="Jost,sans-serif">Amsterdam ✅</text>
+      <circle cx="390" cy="6" r="3" fill="#e8a030"/>
+      <text x="396" y="10" fill="rgba(240,180,80,0.7)" font-size="6.5" font-family="Jost,sans-serif">Copenhagen ✅</text>
+      <text x="462" y="10" fill="rgba(244,237,224,0.35)" font-size="6.5" font-family="Jost,sans-serif">* = day stop</text>
     </g>
   </svg>
 </div>
 
-<!-- MAIN CONTENT -->
 <div class="wrap">
 
-  <div class="trow" style="margin-bottom:1.5rem">
-    <span>✈</span>
-    <div><strong>AKL → MUC:</strong> Depart Auckland 24 Jun (evening) → arrive Munich 25 Jun (~24–26hrs via SIN or DXB). Collect rental car on arrival — road trip starts immediately.</div>
+  <div class="trow sister" style="margin-bottom:0.5rem">
+    <span>💙</span>
+    <div><strong>Sister in Gothenburg:</strong> You arrive Mon 3 Aug evening and have all day Tue 4 Aug with your sister. Wed 5 Aug you fly GOT→MUC early morning (06:30), arriving Munich by 08:30 with a comfortable full day before CA962 departs Thu 6 Aug at 13:00. Book a Munich day-use hotel room or relax at MUC Airport hotel — no overnight charge needed.</div>
   </div>
 
-  <!-- TIMELINE STRIP -->
+  <div class="trow gold" style="margin-bottom:1.2rem">
+    <span>🔑</span>
+    <div><strong>3 changes that made Amsterdam + Copenhagen possible:</strong> (1) <strong>Bled overnight → 2.5hr day stop</strong> — you still see the emerald lake and castle, just en route. (2) <strong>Naples overnight → day trip from Rome</strong> — actually less stressful: base 3 nights in Rome, do a comfortable Pompeii + Naples day trip on Day 2. (3) <strong>Lourdes 2 nights → 1 night</strong> — you still get the evening candlelight procession (Day 1) and Morning Mass + Sacred Baths (Day 2 morning before TGV back).</div>
+  </div>
+
+  <!-- STRIP -->
   <div class="strip">
-    <div class="sb c1"><div class="sl3">Munich + Road Trip</div><div class="sv">Jun 25–Jul 9 · Days 1–15</div></div>
-    <div class="sb c2"><div class="sl3">Paris &amp; Lourdes</div><div class="sv">Jul 9–13 · Days 15–19</div></div>
-    <div class="sb c2"><div class="sl3">Amsterdam</div><div class="sv">Jul 13–14 · Day 20</div></div>
-    <div class="sb c3"><div class="sl3">Copenhagen</div><div class="sv">Jul 14–15 · Day 21</div></div>
-    <div class="sb c3"><div class="sl3">Sweden ×3 ✅</div><div class="sv">Jul 15–18 · Days 22–24</div></div>
-    <div class="sb c4"><div class="sl3">Sri Lanka</div><div class="sv">Jul 18–24 · 6 Nights</div></div>
+    <div class="sb c1"><div class="sl3">Munich + East</div><div class="sv">11–16 Jul<br>Days 1–6</div></div>
+    <div class="sb c1"><div class="sl3">Bled+Italy</div><div class="sv">17–22 Jul<br>Days 7–12</div></div>
+    <div class="sb c2"><div class="sl3">Swiss Alps</div><div class="sv">23–27 Jul<br>Days 13–17</div></div>
+    <div class="sb c3"><div class="sl3">Paris+Lourdes</div><div class="sv">28–29 Jul<br>Days 18–19</div></div>
+    <div class="sb c3"><div class="sl3">Amsterdam</div><div class="sv">30 Jul</div></div>
+    <div class="sb c4"><div class="sl3">Berlin ×2</div><div class="sv">31 Jul–1 Aug</div></div>
+    <div class="sb c4"><div class="sl3">Copenhagen</div><div class="sv">2 Aug</div></div>
+    <div class="sb c5"><div class="sl3">Gothenburg 💙×2</div><div class="sv">3–4 Aug · fly 5 Aug</div></div>
   </div>
 
-  <!-- LEG 1: ROAD TRIP -->
+  <!-- LEG 1: BEIJING + MUNICH -->
   <div class="leg">
     <div class="leg-hd">
-      <span class="badge b-fly">✈ Fly In + </span><span class="badge b-road">🚗 Road Trip</span>
-      <span class="lt">Auckland → Munich · Central Europe Loop</span>
-      <span class="ld">Days 1–15 · Jun 25–Jul 9</span>
+      <span class="badge b-china">🇨🇳 Beijing</span>
+      <span class="badge b-fly">✈ Munich</span>
+      <span class="lt">Auckland → Beijing → Munich · Collect Car</span>
+      <span class="ld">9–11 Jul</span>
     </div>
-    <p style="font-size:0.79rem;color:var(--muted);margin-bottom:1.1rem">Car collected Munich Airport Day 1 · Dropped Munich Airport Day 15 · Munich → Prague → Vienna → Venice → Florence → Naples → Rome → Pisa → Milan → Swiss Alps → Interlaken → Lausanne → Zürich → Munich</p>
+    <div class="trow ch" style="margin-bottom:0.8rem">
+      <span>🇨🇳</span>
+      <div><strong>Beijing outbound (22hrs · Fri 10 Jul):</strong> Land 04:40. Rest at Novotel T3 airside (~3hrs, no visa needed). Airport Express 08:00 → Dongzhimen (45min, ¥35). <strong>Tiananmen Square + Forbidden City</strong> (opens 08:30, allow 4hrs). Wangfujing lunch. Back T3 by midnight. CA961 departs 02:50. <strong>Apply 144-hr Visa-Free Transit before leaving Auckland.</strong></div>
+    </div>
+    <div class="grid">
+      <div class="card muc">
+        <div class="chd"><div class="dn">1</div><div class="di"><div class="dd">Sat 11 Jul · arrive 07:05</div><div class="dl">Munich — Arrive · Collect Car</div></div><div class="fl">🇩🇪</div></div>
+        <div class="cb">CA961 lands MUC T2 07:05. Collect rental car ~09:00. Jet lag day — easy pace. Marienplatz, Viktualienmarkt, English Garden, Hofbräuhaus dinner.
+          <div><span class="tag tr">Arrival Day</span><span class="tag must">🚗 Collect Rental Car</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- LEG 2: EASTERN EUROPE -->
+  <div class="leg">
+    <div class="leg-hd">
+      <span class="badge b-road">🚗 Road Trip</span>
+      <span class="lt">Hallstatt · Prague · Vienna · Budapest · Bled stop · Venice</span>
+      <span class="ld">Days 2–8 · Sun 12 – Sat 18 Jul</span>
+    </div>
     <div class="grid">
 
       <div class="card">
-        <div class="chd"><div class="dn">1</div><div class="di"><div class="dd">Thu 25 Jun</div><div class="dl">Arrive Munich · Collect Car</div></div><div class="fl">🇩🇪</div></div>
-        <div class="cb">Arrive Munich ~midday after overnight flight. Collect rental car at airport. Check in and rest. Easy afternoon — Marienplatz, English Garden, Hofbräuhaus evening.
-          <div><span class="tag tr">Arrival · Jet Lag Day</span><span class="tag must">🚗 Collect Car</span></div>
+        <div class="chd"><div class="dn">2</div><div class="di"><div class="dd">Sun 12 Jul</div><div class="dl">Munich → Hallstatt</div></div><div class="fl">🇦🇹</div></div>
+        <div class="cb">Drive to the world's most photographed village — UNESCO World Heritage on a glacier lake. Arrive afternoon. Salt mine tour, lakeside stroll, golden-hour light.
+          <div class="ti"><span>🚗</span> ~280 km · 3–3.5 hrs · start 10:00</div>
+          <div><span class="tag must">Hallstatt · UNESCO ⛰</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d13.6!3d47.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47736e5a78f9c55f%3A0xf86b26ab3be52b5a!2sHallstatt%2C+Austria!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Munich,Germany/Hallstatt,Austria/@47.85,12.9,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x479e75f9a38c5fd3:0x10cb84a150bedc3!2m2!1d11.5819805!2d48.1351253!1m5!1m1!1s0x47736e5a78f9c55f:0xf86b26ab3be52b5a!2m2!1d13.6492747!2d47.5622172!3e0" target="_blank" class="cmbtn dr">🚗 Drive Munich → Hallstatt &#8594;</a></div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30000!2d11.58!3d48.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd3%3A0x10cb84a150bedc3!2sMunich%2C+Germany!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/search/Munich+city+centre/@48.1351,11.5819,14z" target="_blank" class="cmbtn tr">🗺 Munich City Map &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">2</div><div class="di"><div class="dd">Fri 26 Jun</div><div class="dl">Munich — Full Day</div></div><div class="fl">🇩🇪</div></div>
-        <div class="cb">Full day exploring Munich — Nymphenburg Palace, BMW World, Deutsches Museum, Viktualienmarkt food market. Evening beer garden in the English Garden.
-          <div><span class="tag must">Full Day · Munich</span></div>
+        <div class="chd"><div class="dn">3</div><div class="di"><div class="dd">Mon 13 Jul</div><div class="dl">Hallstatt → Prague</div></div><div class="fl">🇨🇿</div></div>
+        <div class="cb">Long drive north. Arrive mid-afternoon — Charles Bridge at golden hour, Old Town Square, Czech beer hall. <strong>Start 08:00 sharp.</strong>
+          <div class="ti"><span>🚗</span> ~500 km · 5.5–6.5 hrs · <strong>Start 08:00</strong></div>
+          <div><span class="tag long">Long Drive · 08:00 Start</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40000!2d14.43!3d50.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPrague%2C+Czech+Republic!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Hallstatt,Austria/Prague,Czech+Republic/@48.5,13.5,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47736e5a78f9c55f:0xf86b26ab3be52b5a!2m2!1d13.6492747!2d47.5622172!1m5!1m1!1s0x470b939c0970798b:0x400af0f66164090!2m2!1d14.4378005!2d50.0755381!3e0" target="_blank" class="cmbtn dr">🚗 Drive Hallstatt → Prague &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">3</div><div class="di"><div class="dd">Sat 27 Jun</div><div class="dl">Munich → Prague</div></div><div class="fl">🇨🇿</div></div>
-        <div class="cb">Drive to Prague. Arrive mid-afternoon — Old Town Square, Charles Bridge at dusk, Czech beer hall evening.
-          <div class="ti"><span>🚗</span> ~380 km · 3.5–4 hrs</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="dn">4</div><div class="di"><div class="dd">Sun 28 Jun</div><div class="dl">Prague — Full Day</div></div><div class="fl">🇨🇿</div></div>
-        <div class="cb">Full day — Prague Castle complex, Josefov Jewish Quarter, Wenceslas Square, river cruise. One of Europe's most breathtaking cities.
+        <div class="chd"><div class="dn">4</div><div class="di"><div class="dd">Tue 14 Jul</div><div class="dl">Prague — Full Day</div></div><div class="fl">🇨🇿</div></div>
+        <div class="cb">Full day — Prague Castle &amp; St. Vitus Cathedral, Josefov Jewish Quarter, Wenceslas Square, Vltava river cruise. One of Europe's most beautiful cities.
           <div><span class="tag must">Full Day · Prague</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d14.43!3d50.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e7b32a7e03%3A0x1c2af04b9e35e31d!2sPrague+Castle!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Prague+Castle/Old+Town+Square+Prague/Charles+Bridge+Prague/@50.08,14.42,14z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x470b94e7b32a7e03:0x1c2af04b9e35e31d!2m2!1d14.4002!2d50.0906!1m5!1m1!1s0x470b94e7b32a7e03:0x1c2af04b9e35e31d!2m2!1d14.4211!2d50.0874!1m5!1m1!1s0x470b94ea1fe8e6a5:0x2e14e14a09e8fa0f!2m2!1d14.4116!2d50.0865!3e2" target="_blank" class="cmbtn wk">🚶 Prague Walk: Castle → Old Town &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">5</div><div class="di"><div class="dd">Mon 29 Jun</div><div class="dl">Prague → Vienna</div></div><div class="fl">🇦🇹</div></div>
-        <div class="cb">Drive to Vienna. Arrive lunch. Schönbrunn Palace, Ringstrasse, Naschmarkt food market. Sachertorte at Café Sacher. Overnight.
-          <div class="ti"><span>🚗</span> ~310 km · 3–3.5 hrs</div>
+        <div class="chd"><div class="dn">5</div><div class="di"><div class="dd">Wed 15 Jul</div><div class="dl">Prague → Vienna</div></div><div class="fl">🇦🇹</div></div>
+        <div class="cb">Morning Prague Castle area. Drive south, arrive lunch. Schönbrunn Palace, Ringstrasse, Naschmarkt, Sachertorte at Café Sacher.
+          <div class="ti"><span>🚗</span> ~320 km · 3.5–4 hrs · leave Prague 11:00</div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40000!2d16.37!3d48.21!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079e5136ca0f%3A0xfdc2d58a1c9b610a!2sVienna%2C+Austria!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Prague,Czech+Republic/Vienna,Austria/@48.9,15.8,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x470b939c0970798b:0x400af0f66164090!2m2!1d14.4378005!2d50.0755381!1m5!1m1!1s0x476d079e5136ca0f:0xfdc2d58a1c9b610a!2m2!1d16.3738189!2d48.2081743!3e0" target="_blank" class="cmbtn dr">🚗 Drive Prague → Vienna &#8594;</a></div>
       </div>
 
-      <div class="card">
-        <div class="chd"><div class="dn">6</div><div class="di"><div class="dd">Tue 30 Jun</div><div class="dl">Vienna → Venice via Salzburg</div></div><div class="fl">🇮🇹</div></div>
-        <div class="cb">Drive via Salzburg (~1hr stop — Mozart birthplace, old town, fortress). Cross the Alps into Italy. Arrive Venice evening — park at Piazzale Roma.
-          <div class="ti"><span>🚗</span> ~620 km · 6–7 hrs incl. Salzburg stop</div>
-          <div><span class="tag">Salzburg Stopover</span></div>
+      <div class="card bud">
+        <div class="chd"><div class="dn">6</div><div class="di"><div class="dd">Thu 16 Jul</div><div class="dl">Vienna → Budapest</div></div><div class="fl">🇭🇺</div></div>
+        <div class="cb">Short drive east. Arrive midday. Fisherman's Bastion, Buda Castle, <strong>Széchenyi Thermal Baths</strong> (bring swimsuit, 3+ hrs!), ruin bars evening.
+          <div class="ti"><span>🚗</span> ~270 km · 2.5–3.5 hrs incl. border crossing</div>
+          <div><span class="tag bud">Budapest</span><span class="tag must">Thermal Baths!</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40000!2d19.04!3d47.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest%2C+Hungary!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Vienna,Austria/Budapest,Hungary/@47.6,17.0,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x476d079e5136ca0f:0xfdc2d58a1c9b610a!2m2!1d16.3738189!2d48.2081743!1m5!1m1!1s0x4741c334d1d4cfc9:0x400c4290c1e1160!2m2!1d19.0403594!2d47.497912!3e0" target="_blank" class="cmbtn dr">🚗 Drive Vienna → Budapest &#8594;</a></div>
+      </div>
+
+      <div class="card slo">
+        <div class="chd"><div class="dn">7</div><div class="di"><div class="dd">Fri 17 Jul</div><div class="dl">Budapest → Bled 2.5hr stop → Venice</div></div><div class="fl">🇸🇮🇮🇹</div></div>
+        <div class="cb"><strong>Bled, Slovenia</strong> — emerald glacial lake, castle on a cliff (2.5hr stop): rowboat to island church, castle viewpoint, famous kremšnita cake. Then drive to Venice. Park Piazzale Roma.
+          <div class="ti"><span>🚗</span> Budapest→Bled ~380 km · 4–5 hrs. <strong>2.5hr Bled stop.</strong> Bled→Venice ~150 km · 2 hrs. Total ~8 hrs. <strong>Start 07:30.</strong></div>
+          <div><span class="tag slo">Bled Day Stop 🇸🇮</span><span class="tag long">07:30 Start</span></div>
+        </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8000!2d14.11!3d46.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477a497f46ee6a21%3A0x5b2d9b17ed758efd!2sBled%2C+Slovenia!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Budapest,Hungary/Bled,Slovenia/Venice,Italy/@46.8,14.4,7z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x4741c334d1d4cfc9:0x400c4290c1e1160!2m2!1d19.0403594!2d47.497912!1m5!1m1!1s0x477a497f46ee6a21:0x5b2d9b17ed758efd!2m2!1d14.1146345!2d46.3683923!1m5!1m1!1s0x477eb1daf1d63d89:0xdb9b0de8d5d745bd!2m2!1d12.3319841!2d45.4408474!3e0" target="_blank" class="cmbtn dr">🚗 Drive Budapest → Bled → Venice &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">7</div><div class="di"><div class="dd">Wed 1 Jul</div><div class="dl">Venice — Full Day</div></div><div class="fl">🇮🇹</div></div>
-        <div class="cb">Full day Venice — gondola ride, St. Mark's Basilica &amp; Campanile, Rialto Bridge, Burano island ferry. ⚠️ No driving in Venice — car stays at Piazzale Roma.
+        <div class="chd"><div class="dn">8</div><div class="di"><div class="dd">Sat 18 Jul</div><div class="dl">Venice — Full Day</div></div><div class="fl">🇮🇹</div></div>
+        <div class="cb">Full day Venice — gondola ride, St. Mark's Basilica &amp; Doge's Palace, Rialto Bridge, vaporetto to Burano island. ⚠️ Car stays at Piazzale Roma on mainland.
           <div><span class="tag must">Full Day · Venice</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8000!2d12.34!3d45.44!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1b5cf9f81db%3A0x7de4af55a3421b06!2sSt+Mark%27s+Square%2C+Venice!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Piazzale+Roma+Venice/St+Mark%27s+Square+Venice/@45.437,12.334,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x477eb1daf1d63d89:0xdb9b0de8d5d745bd!2m2!1d12.3198!2d45.4383!1m5!1m1!1s0x477eb1b5cf9f81db:0x7de4af55a3421b06!2m2!1d12.3388!2d45.4341!3e2" target="_blank" class="cmbtn wk">🚶 Walk Piazzale Roma → St Mark's &#8594;</a></div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- LEG 3: ITALY -->
+  <div class="leg">
+    <div class="leg-hd">
+      <span class="badge b-road">🚗 Italy</span>
+      <span class="lt">Florence · Rome (×3) · Pompeii + Naples day trip · Vatican · Milan</span>
+      <span class="ld">Days 9–13 · Sun 19 – Thu 23 Jul</span>
+    </div>
+    <div class="trow ok" style="margin-bottom:0.8rem">
+      <span>✅</span>
+      <div><strong>Less stressful Italy:</strong> 3 nights in Rome as your base. Day 1 arrive + explore. Day 2 Pompeii + Naples day trip (2.5hrs each way, eat pizza in Naples, walk Pompeii — back by 18:00). Day 3 Vatican full day. No hotel change stress, no driving tired with luggage. This is actually better than a Naples overnight.</div>
+    </div>
+    <div class="grid">
+
       <div class="card">
-        <div class="chd"><div class="dn">8</div><div class="di"><div class="dd">Thu 2 Jul</div><div class="dl">Venice → Florence</div></div><div class="fl">🇮🇹</div></div>
-        <div class="cb">Drive to Florence. Afternoon: Duomo, Ponte Vecchio, Piazzale Michelangelo for golden-hour rooftop views.
-          <div class="ti"><span>🚗</span> ~265 km · 2.5–3 hrs</div>
+        <div class="chd"><div class="dn">9</div><div class="di"><div class="dd">Sun 19 Jul</div><div class="dl">Venice → Florence</div></div><div class="fl">🇮🇹</div></div>
+        <div class="cb">Drive south. Afternoon: Duomo &amp; Baptistery, Ponte Vecchio, Piazzale Michelangelo for the iconic golden-hour panorama over terracotta Florence.
+          <div class="ti"><span>🚗</span> ~270 km · 3–3.5 hrs · start 10:00</div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d11.26!3d43.77!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a540b52da6ebf%3A0x1e4b8e571e8eda!2sFlorence%2C+Italy!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Piazzale+Roma+Venice/Florence+Italy/@44.4,11.8,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x477eb1daf1d63d89:0xdb9b0de8d5d745bd!2m2!1d12.3198!2d45.4383!1m5!1m1!1s0x132a540b52da6ebf:0x1e4b8e571e8eda!2m2!1d11.2558136!2d43.7695604!3e0" target="_blank" class="cmbtn dr">🚗 Drive Venice → Florence &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">9</div><div class="di"><div class="dd">Fri 3 Jul</div><div class="dl">Florence → Naples</div></div><div class="fl">🇮🇹</div></div>
-        <div class="cb">Morning: Uffizi Gallery (pre-book). Drive south with a stop at Pompeii ruins — walk the ancient streets. Continue to Naples.
-          <div class="ti"><span>🚗</span> ~480 km · 4.5–5.5 hrs</div>
-          <div><span class="tag">Pompeii Stopover</span></div>
+        <div class="chd"><div class="dn">10</div><div class="di"><div class="dd">Mon 20 Jul</div><div class="dl">Florence → Pisa stop → Rome</div></div><div class="fl">🇮🇹</div></div>
+        <div class="cb">Morning Uffizi Gallery (pre-book!). Drive north to <strong>Pisa</strong> (~1.5hr stop — Leaning Tower, Piazza dei Miracoli). Continue south to Rome. Arrive afternoon — Colosseum, Forum, Trevi Fountain, Trastevere dinner.
+          <div class="ti"><span>🚗</span> Florence→Pisa ~80 km · 1hr. Pisa→Rome ~340 km · 3.5 hrs. Total ~5.5–6 hrs. Start 09:30.</div>
+          <div><span class="tag must">Pisa Stop + Rome</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24000!2d12.49!3d41.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d591b57c754b65%3A0xa7b0c8bd6f4c41db!2sRome%2C+Italy!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Florence+Italy/Pisa+Italy/Rome+Italy/@43.5,11.5,7z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x132a540b52da6ebf:0x1e4b8e571e8eda!2m2!1d11.2558136!2d43.7695604!1m5!1m1!1s0x12d591cdc3f6c9d3:0x400bc4d17681430!2m2!1d10.4018624!2d43.7228401!1m5!1m1!1s0x12d591b57c754b65:0xa7b0c8bd6f4c41db!2m2!1d12.4963655!2d41.9027835!3e0" target="_blank" class="cmbtn dr">🚗 Drive Florence → Pisa → Rome &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">10</div><div class="di"><div class="dd">Sat 4 Jul</div><div class="dl">Naples → Rome</div></div><div class="fl">🇮🇹</div></div>
-        <div class="cb">Drive to Rome. Colosseum, Roman Forum, Trevi Fountain. Evening: Trastevere neighbourhood — best pasta in Rome.
-          <div class="ti"><span>🚗</span> ~225 km · 2–2.5 hrs</div>
-          <div><span class="tag must">Rome</span></div>
+        <div class="chd"><div class="dn">11</div><div class="di"><div class="dd">Tue 21 Jul</div><div class="dl">Rome — Pompeii + Naples Day Trip</div></div><div class="fl">🇮🇹</div></div>
+        <div class="cb">Day trip from Rome base. Drive to <strong>Pompeii</strong> (~2.5hrs), explore the ancient city (~2–3hrs). Then 30min to <strong>Naples</strong> — eat authentic pizza for lunch. Drive back to Rome (~2.5hrs). Back by 18:00.
+          <div class="ti"><span>🚗</span> Rome→Pompeii ~230 km · 2.5 hrs. Pompeii→Naples 30min. Naples→Rome ~230 km · 2.5–3 hrs. <strong>Start 08:00.</strong></div>
+          <div><span class="tag must">Pompeii + Naples Pizza!</span><span class="tag day">Day Trip From Rome Base</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200000!2d14.35!3d40.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bb8ded8f09f1b%3A0x5204e09bce4bb2ae!2sPompeii%2C+Italy!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Rome+Italy/Pompeii+Italy/Naples+Italy/Rome+Italy/@41.2,14.0,8z/data=!3m1!4b1!4m26!4m25!1m5!1m1!1s0x12d591b57c754b65:0xa7b0c8bd6f4c41db!2m2!1d12.4963655!2d41.9027835!1m5!1m1!1s0x133bb8ded8f09f1b:0x5204e09bce4bb2ae!2m2!1d14.4989344!2d40.7491684!1m5!1m1!1s0x133b0866db580001:0x66e0e7359ee674cc!2m2!1d14.2681244!2d40.8517746!1m5!1m1!1s0x12d591b57c754b65:0xa7b0c8bd6f4c41db!2m2!1d12.4963655!2d41.9027835!3e0" target="_blank" class="cmbtn dr">🚗 Day Trip: Rome → Pompeii → Naples → Rome &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">11</div><div class="di"><div class="dd">Sun 5 Jul</div><div class="dl">Rome → Pisa → Milan</div></div><div class="fl">🇮🇹</div></div>
-        <div class="cb">Early Vatican visit (pre-book essential!). Drive north with Leaning Tower of Pisa stop (~1.5hrs). Continue to Milan — arrive evening.
-          <div class="ti"><span>🚗</span> ~610 km total · 6–7 hrs incl. Pisa</div>
-          <div><span class="tag tr">Long Drive Day</span></div>
+        <div class="chd"><div class="dn">12</div><div class="di"><div class="dd">Wed 22 Jul</div><div class="dl">Rome — Vatican Full Day</div></div><div class="fl">🇮🇹</div></div>
+        <div class="cb">Full day Rome — <strong>Vatican Museums + Sistine Chapel + St. Peter's Basilica</strong> (pre-book museivaticani.va — essential 3–4 weeks ahead!). Depart 07:00 for first entry. Afternoon: Pantheon, Piazza Navona.
+          <div><span class="tag must">Vatican — Pre-book! 🎨 Start 07:00</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8000!2d12.45!3d41.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6054d4d7ada3%3A0xe8dbd3f1d97c75c0!2sVatican+Museums!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Colosseum+Rome/Trevi+Fountain+Rome/Vatican+Museums+Rome/@41.9,12.47,14z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x132f61b6532013ad:0x28f4c6f1cd527be4!2m2!1d12.4922309!2d41.8902102!1m5!1m1!1s0x132f60441c61a4b3:0x56c1f5b6bb4a6cd!2m2!1d12.4769!2d41.8986!1m5!1m1!1s0x132f6054d4d7ada3:0xe8dbd3f1d97c75c0!2m2!1d12.4533504!2d41.906474!3e2" target="_blank" class="cmbtn wk">🚶 Rome Walk: Colosseum → Vatican &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">12</div><div class="di"><div class="dd">Mon 6 Jul</div><div class="dl">Milan → Swiss Alps · Interlaken</div></div><div class="fl">🇨🇭</div></div>
-        <div class="cb">Quick Milan morning (Duomo, Galleria Vittorio Emanuele). Drive into Switzerland to Interlaken. Afternoon: Harder Kulm viewpoint, Lake Thun boat cruise.
-          <div class="ti"><span>🚗</span> ~285 km · 3–3.5 hrs</div>
-          <div><span class="tag must">Swiss Alps ⛰</span></div>
+        <div class="chd"><div class="dn">13</div><div class="di"><div class="dd">Thu 23 Jul</div><div class="dl">Rome → Florence stop → Milan</div></div><div class="fl">🇮🇹</div></div>
+        <div class="cb">Drive north. <strong>Florence stop</strong> ~1.5hrs — morning coffee at Piazzale Michelangelo, Ponte Vecchio one more time. Continue to Milan — Duomo, Galleria Vittorio Emanuele, Navigli canal dinner.
+          <div class="ti"><span>🚗</span> Rome→Florence ~280 km · 3 hrs. Florence→Milan ~300 km · 3.5 hrs. Total ~7 hrs. <strong>Start 07:30.</strong></div>
+          <div><span class="tag long">07:30 Start · Florence stop</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30000!2d9.19!3d45.46!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e39!2sMilan%2C+Italy!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Rome+Italy/Florence+Italy/Milan+Italy/@43.9,11.5,7z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x12d591b57c754b65:0xa7b0c8bd6f4c41db!2m2!1d12.4963655!2d41.9027835!1m5!1m1!1s0x132a540b52da6ebf:0x1e4b8e571e8eda!2m2!1d11.2558136!2d43.7695604!1m5!1m1!1s0x4786c1493f1275e7:0x3cffcd13c6740e39!2m2!1d9.1859243!2d45.4654219!3e0" target="_blank" class="cmbtn dr">🚗 Drive Rome → Florence stop → Milan &#8594;</a></div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- LEG 4: SWISS ALPS -->
+  <div class="leg">
+    <div class="leg-hd">
+      <span class="badge b-road">🚗 Swiss Alps</span>
+      <span class="lt">Zermatt · Interlaken · Jungfraujoch · Lausanne stop · Zürich</span>
+      <span class="ld">Days 14–17 · Fri 24 – Mon 27 Jul</span>
+    </div>
+    <div class="grid">
+
       <div class="card">
-        <div class="chd"><div class="dn">13</div><div class="di"><div class="dd">Tue 7 Jul</div><div class="dl">Interlaken — Mountain Day</div></div><div class="fl">🇨🇭</div></div>
-        <div class="cb">Full alpine day — Jungfraujoch "Top of Europe" by train (highest railway station in Europe, 3,454m), or Schilthorn / Mürren for stunning Eiger views. Grindelwald valley hike.
-          <div><span class="tag must">Full Day · Jungfraujoch ⛰</span></div>
+        <div class="chd"><div class="dn">14</div><div class="di"><div class="dd">Fri 24 Jul</div><div class="dl">Milan → Zermatt</div></div><div class="fl">🇨🇭</div></div>
+        <div class="cb">Quick Milan morning. Drive to Zermatt. <strong>Park at Täsch</strong> (~€10/day) — car-free village. Shuttle train 12min into Zermatt. Matterhorn views at golden hour.
+          <div class="ti"><span>🚗</span> ~220 km · 3–3.5 hrs to Täsch · start 10:00</div>
+          <div><span class="tag must">Zermatt · Matterhorn ⛰</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8000!2d7.75!3d46.02!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f9e2f2b23d4a5%3A0x9a04a29e12b26fd8!2sZermatt%2C+Switzerland!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Milan+Italy/T%C3%A4sch+Switzerland/@45.8,7.8,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4786c1493f1275e7:0x3cffcd13c6740e39!2m2!1d9.1859243!2d45.4654219!1m5!1m1!1s0x478f9e9c77a9e41b:0x8f5b53b1bd48bfc1!2m2!1d7.7836111!2d46.0649998!3e0" target="_blank" class="cmbtn dr">🚗 Drive Milan → Täsch (Zermatt) &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">14</div><div class="di"><div class="dd">Wed 8 Jul</div><div class="dl">Interlaken → Lausanne → Zürich</div></div><div class="fl">🇨🇭</div></div>
-        <div class="cb">Scenic drive along Lake Geneva. Stop in Lausanne (~1.5hrs — lakefront promenade, Olympic Museum, old town). Continue to Zürich — Old Town, Lake Zürich, Bahnhofstrasse.
-          <div class="ti"><span>🚗</span> ~230 km · 2.5–3 hrs · Lausanne stop 1.5hrs</div>
+        <div class="chd"><div class="dn">15</div><div class="di"><div class="dd">Sat 25 Jul</div><div class="dl">Zermatt — Gornergrat → Interlaken</div></div><div class="fl">🇨🇭</div></div>
+        <div class="cb">Morning: <strong>Gornergrat Railway</strong> (book at gornergrat.ch) — cogwheel to 3,089m, Matterhorn face-to-face. Depart 08:00 for clear skies. Drive to Interlaken via mountain passes.
+          <div class="ti"><span>🚗</span> ~130 km · 2.5–3 hrs mountain roads · leave Zermatt 13:00</div>
+          <div><span class="tag must">Gornergrat 3,089m ⛰</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12000!2d7.86!3d46.69!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fa69f94d1a617%3A0xfd1a02213c64f0b6!2sInterlaken%2C+Switzerland!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/T%C3%A4sch+Switzerland/Interlaken+Switzerland/@46.4,7.7,9z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x478f9e9c77a9e41b:0x8f5b53b1bd48bfc1!2m2!1d7.7836111!2d46.0649998!1m5!1m1!1s0x478fa69f94d1a617:0xfd1a02213c64f0b6!2m2!1d7.8631573!2d46.6862777!3e0" target="_blank" class="cmbtn dr">🚗 Drive Zermatt → Interlaken &#8594;</a></div>
       </div>
 
       <div class="card">
-        <div class="chd"><div class="dn">15</div><div class="di"><div class="dd">Thu 9 Jul</div><div class="dl">Zürich → Munich → Paris</div></div><div class="fl">🇩🇪🇫🇷</div></div>
-        <div class="cb">Morning in Zürich — Kunsthaus museum or Rhine falls day trip option. Drive to Munich Airport (~3hrs). Drop rental car. Fly Munich → Paris CDG (~1h 45min). Arrive Paris afternoon.
-          <div class="ti"><span>🚗</span> ~330 km · 3–3.5 hrs · then ✈ MUC→CDG ~1h 45min</div>
+        <div class="chd"><div class="dn">16</div><div class="di"><div class="dd">Sun 26 Jul</div><div class="dl">Interlaken — Jungfraujoch Full Day</div></div><div class="fl">🇨🇭</div></div>
+        <div class="cb"><strong>Jungfraujoch "Top of Europe"</strong> — cogwheel train to 3,454m (book jungfrau.ch months ahead!). Depart 07:00. Glacier panorama. Dress warmly — 0°C at summit always.
+          <div><span class="tag must">Jungfraujoch 3,454m ⛰ Full Day · 07:00</span></div>
+        </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30000!2d7.97!3d46.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fa454a6e8ed3f%3A0x5c0c7c7dc9cf6ebd!2sJungfraujoch!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/search/Interlaken+train+station+Jungfrau+railway/@46.685,7.863,14z" target="_blank" class="cmbtn tr">🚆 Jungfraujoch Railway Info &#8594;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="dn">17</div><div class="di"><div class="dd">Mon 27 Jul</div><div class="dl">Interlaken → Lausanne stop → Zürich</div></div><div class="fl">🇨🇭</div></div>
+        <div class="cb">Scenic Lake Geneva drive. <strong>Lausanne stop</strong> ~1.5hrs — Olympic Museum, lakefront promenade, medieval old town. Continue to Zürich — Altstadt, lake, Bahnhofstrasse evening.
+          <div class="ti"><span>🚗</span> ~235 km · 3–3.5 hrs incl. Lausanne stop</div>
+        </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20000!2d8.54!3d47.38!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b0d4f6f1bed%3A0x9a3a895471e81492!2sZ%C3%BCrich%2C+Switzerland!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Interlaken+Switzerland/Lausanne+Switzerland/Z%C3%BCrich+Switzerland/@46.8,7.4,8z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x478fa69f94d1a617:0xfd1a02213c64f0b6!2m2!1d7.8631573!2d46.6862777!1m5!1m1!1s0x478c293eec0c7ed5:0xe4402f08c5b5542!2m2!1d6.6327025!2d46.5196535!1m5!1m1!1s0x47900b0d4f6f1bed:0x9a3a895471e81492!2m2!1d8.541694!2d47.3768866!3e0" target="_blank" class="cmbtn dr">🚗 Drive Interlaken → Lausanne → Zürich &#8594;</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LEG 5: DROP CAR + PARIS + LOURDES -->
+  <div class="leg">
+    <div class="leg-hd">
+      <span class="badge b-fly">✈ MUC→CDG</span>
+      <span class="badge b-rail">🚆 TGV</span>
+      <span class="lt">Drop Car Munich · Paris · Lourdes</span>
+      <span class="ld">Days 18–19 · Tue 28 – Wed 29 Jul</span>
+    </div>
+    <div class="grid">
+
+      <div class="card">
+        <div class="chd"><div class="dn">18</div><div class="di"><div class="dd">Tue 28 Jul</div><div class="dl">Zürich → Munich drop car → Paris Night 1</div></div><div class="fl">🇩🇪🇫🇷</div></div>
+        <div class="cb">Morning Rhine Falls option (30min from Zürich — Europe's largest waterfall). Drive Munich Airport ~3.5hrs. <strong>Drop rental car at MUC T2.</strong> Fly MUC→CDG ~1h 45min. Arrive Paris afternoon. Eiffel Tower area evening.
+          <div class="ti"><span>🚗</span> ~340 km · 3.5–4 hrs · <strong>Leave Zürich 08:00</strong> · then ✈ ~1h 45min + 2hrs airport</div>
           <div><span class="tag must">🚗 Drop Car → ✈ Fly Paris</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d11.79!3d48.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e0d73009b38e1%3A0x4ae6cc4882b6b0ef!2sMunich+Airport!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Z%C3%BCrich+Switzerland/Munich+Airport+Germany/@47.8,10.4,8z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47900b0d4f6f1bed:0x9a3a895471e81492!2m2!1d8.541694!2d47.3768866!1m5!1m1!1s0x479e0d73009b38e1:0x4ae6cc4882b6b0ef!2m2!1d11.786085!2d48.353802!3e0" target="_blank" class="cmbtn dr">🚗 Drive Zürich → Munich Airport &#8594;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="chd"><div class="dn">19</div><div class="di"><div class="dd">Wed 29 Jul</div><div class="dl">Paris → Lourdes · 1 Night</div></div><div class="fl">🇫🇷</div></div>
+        <div class="cb">Early TGV Paris Montparnasse → Lourdes (~5hrs). Arrive early afternoon. Sanctuary of Our Lady, Grotto of Massabielle. <strong>Evening candlelight Torch Procession</strong> — one of the most moving experiences in Europe.
+          <div class="ti"><span>🚆</span> TGV ~5 hrs · depart Paris 08:00 · <strong>book months ahead!</strong></div>
+          <div><span class="tag must">Lourdes · 1 Night 🕊</span></div>
+        </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6000!2d-0.05!3d43.09!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5655c8e6a6e6b1%3A0xb8b20d5eb69b6034!2sSanctuary+of+Our+Lady+of+Lourdes!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Gare+de+Paris+Montparnasse/Gare+de+Lourdes/@44.5,1.0,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47e66e2964e34e2d:0x8ddca9ee380ef7e0!2m2!1d2.3200402!2d48.8408462!1m5!1m1!1s0xd5653f58c8f30005:0x43b48826a7b3460e!2m2!1d-0.0413!2d43.0955!3e3" target="_blank" class="cmbtn tr">🚆 TGV Paris Montparnasse → Lourdes &#8594;</a></div>
       </div>
 
     </div>
   </div>
 
-  <!-- LEG 2: PARIS & LOURDES -->
+  <!-- LEG 6: LOURDES → AMSTERDAM → BERLIN → COPENHAGEN → GOTHENBURG -->
   <div class="leg">
     <div class="leg-hd">
-      <span class="badge b-rail">🚆 TGV</span>
-      <span class="lt">Paris &amp; Lourdes Pilgrimage</span>
-      <span class="ld">Days 15–19 · Jul 9–13</span>
+      <span class="badge b-rail">🚆 Train + ✈ Fly</span>
+      <span class="lt">Lourdes → Amsterdam → Berlin → Copenhagen → Gothenburg 💙</span>
+      <span class="ld">Days 20–25 · Thu 30 Jul – Tue 4 Aug</span>
     </div>
+
+    <div class="trow warn" style="margin-bottom:0.8rem">
+      <span>⏱</span>
+      <div><strong>Thu 30 Jul — the critical travel day:</strong> TGV Lourdes 08:00 → Paris Montparnasse 13:00. Taxi/Metro Montparnasse → Gare du Nord (40min, different stations). Thalys departs ~14:13 Paris Nord → Amsterdam 17:32. Arrive Amsterdam with a full evening ahead. <strong>This is tight but confirmed feasible</strong> — just don't miss the 08:00 TGV from Lourdes.</div>
+    </div>
+
     <div class="grid">
 
-      <div class="card">
-        <div class="chd"><div class="dn">16</div><div class="di"><div class="dd">Fri 10 Jul</div><div class="dl">Paris → Lourdes</div></div><div class="fl">🇫🇷</div></div>
-        <div class="cb">Early TGV Paris Montparnasse → Lourdes (~5hrs). Arrive early afternoon. Sanctuary of Our Lady, Grotto of Massabielle, evening candlelight procession.
-          <div class="ti"><span>🚆</span> TGV ~5 hrs · book weeks ahead — high season</div>
-          <div><span class="tag must">Pilgrimage · Lourdes</span></div>
+      <div class="card ams">
+        <div class="chd"><div class="dn">20</div><div class="di"><div class="dd">Thu 30 Jul</div><div class="dl">Lourdes → Paris → Amsterdam Night 1</div></div><div class="fl">🇫🇷🇳🇱</div></div>
+        <div class="cb">Morning Sacred Baths + Mass at Lourdes (05:30–07:30). TGV Lourdes 08:00 → Paris 13:00. Taxi to Gare du Nord (~40min). Thalys Paris → Amsterdam (~3.5hrs). Arrive 17:30. Evening canal walk, Jordaan dinner.
+          <div class="ti"><span>🚆</span> TGV 08:00→13:00 · taxi 40min · Thalys ~14:13→17:32 Amsterdam</div>
+          <div><span class="tag ams">Amsterdam — 1 Night ✅</span><span class="tag must">Don't miss 08:00 TGV!</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d4.9!3d52.37!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63f58c1bcecf5%3A0x10b73c0ff038b7cd!2sAmsterdam+Centraal!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Gare+de+Lourdes/Amsterdam+Centraal/@49.0,5.0,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd5653f58c8f30005:0x43b48826a7b3460e!2m2!1d-0.0413!2d43.0955!1m5!1m1!1s0x47c63f58c1bcecf5:0x10b73c0ff038b7cd!2m2!1d4.8999823!2d52.3791283!3e3" target="_blank" class="cmbtn tr">🚆 TGV Lourdes → Paris → Thalys → Amsterdam &#8594;</a></div>
       </div>
 
-      <div class="card">
-        <div class="chd"><div class="dn">17</div><div class="di"><div class="dd">Sat 11 Jul</div><div class="dl">Lourdes — Full Day</div></div><div class="fl">🇫🇷</div></div>
-        <div class="cb">Full spiritual day — Morning Mass, the Sacred Baths, Way of the Cross on the hillside, evening Torch Procession. One of the world's most visited pilgrimage sites.
-          <div><span class="tag must">Full Day · Lourdes</span></div>
+      <div class="card ber">
+        <div class="chd"><div class="dn">21</div><div class="di"><div class="dd">Fri 31 Jul</div><div class="dl">Amsterdam → Berlin Night 1</div></div><div class="fl">🇳🇱🇩🇪</div></div>
+        <div class="cb">Morning Amsterdam — canals, Rijksmuseum area, Anne Frank House area (pre-book if overnighting!). ICE train Amsterdam → Berlin (~6hrs). Arrive afternoon. East Side Gallery, Brandenburg Gate at dusk.
+          <div class="ti"><span>🚆</span> ICE ~6 hrs · depart Amsterdam 09:00 · arrive Berlin ~15:00</div>
+          <div><span class="tag ber">Berlin — Night 1</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30000!2d13.4!3d52.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin+Hauptbahnhof!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Amsterdam+Centraal/Berlin+Hauptbahnhof/@52.0,9.5,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47c63f58c1bcecf5:0x10b73c0ff038b7cd!2m2!1d4.8999823!2d52.3791283!1m5!1m1!1s0x47a84e373f035901:0x42120465b5e3b70!2m2!1d13.3696717!2d52.5250839!3e3" target="_blank" class="cmbtn tr">🚆 ICE Amsterdam → Berlin &#8594;</a></div>
       </div>
 
-      <div class="card">
-        <div class="chd"><div class="dn">18</div><div class="di"><div class="dd">Sun 12 Jul</div><div class="dl">Lourdes → Paris</div></div><div class="fl">🇫🇷</div></div>
-        <div class="cb">Morning prayer at the Grotto. TGV back to Paris (~5hrs). Afternoon: Louvre or Musée d'Orsay. Dinner near Saint-Germain-des-Prés.
-          <div class="ti"><span>🚆</span> TGV ~5 hrs back to Paris</div>
+      <div class="card ber">
+        <div class="chd"><div class="dn">22</div><div class="di"><div class="dd">Sat 1 Aug</div><div class="dl">Berlin — Full Day Night 2</div></div><div class="fl">🇩🇪</div></div>
+        <div class="cb">Full day — Holocaust Memorial, <strong>Reichstag dome</strong> (pre-register at bundestag.de!), East Side Gallery, Museum Island (Pergamon Museum), Tiergarten, Potsdamer Platz.
+          <div><span class="tag ber">Berlin — Night 2</span><span class="tag must">Full Day</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d13.38!3d52.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburg+Gate%2C+Berlin!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Holocaust+Memorial+Berlin/Reichstag+Berlin/East+Side+Gallery+Berlin/Checkpoint+Charlie+Berlin/@52.51,13.38,14z/data=!3m1!4b1!4m26!4m25!1m5!1m1!1s0x47a851957b38eb41:0x3f00c5c4b595b9be!2m2!1d13.3782!2d52.5138!1m5!1m1!1s0x47a851957b38eb41:0x3f00c5c4b595b9be!2m2!1d13.3762!2d52.5186!1m5!1m1!1s0x47a84e2e8d0a7b29:0x84f9fcf6cf27c4c6!2m2!1d13.4395!2d52.5052!1m5!1m1!1s0x47a84fa75b36a455:0xbf39e21c47dfdb35!2m2!1d13.3904!2d52.5075!3e2" target="_blank" class="cmbtn wk">🚶 Berlin Walk: Holocaust Memorial → Reichstag → East Side Gallery &#8594;</a></div>
       </div>
 
-      <div class="card">
-        <div class="chd"><div class="dn">19</div><div class="di"><div class="dd">Mon 13 Jul</div><div class="dl">Paris — Full Day</div></div><div class="fl">🇫🇷</div></div>
-        <div class="cb">Full Paris day — Montmartre &amp; Sacré-Cœur, Notre-Dame exterior, Champs-Élysées, Arc de Triomphe. ✨ Tonight is Bastille Day eve — fireworks at the Eiffel Tower!
-          <div><span class="tag must">Full Day · Paris</span><span class="tag bn">Bastille Eve 🎆</span></div>
+      <div class="card cph">
+        <div class="chd"><div class="dn">23</div><div class="di"><div class="dd">Sun 2 Aug</div><div class="dl">Berlin → Copenhagen Night 1</div></div><div class="fl">🇩🇰</div></div>
+        <div class="cb">Fly Berlin → Copenhagen (~1h 10min). Arrive midday. <strong>Nyhavn</strong> colourful harbour, <strong>Tivoli Gardens</strong> (world's oldest amusement park!), The Little Mermaid, Strøget shopping street. Full afternoon + evening.
+          <div class="ti"><span>✈</span> BER→CPH ~1h 10min · depart 10:00 · arrive 11:20</div>
+          <div><span class="tag cph">Copenhagen — 1 Night ✅</span><span class="tag must">Tivoli + Nyhavn!</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d12.59!3d55.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465252cb1daee951%3A0xd5c0b3b6dfe28cf4!2sNyhavn%2C+Copenhagen!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Berlin+Brandenburg+Airport/Copenhagen+Airport+Kastrup/@53.8,12.5,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x47a8f0b97f82b4cb:0xb2da7c4c3b8b4a6e!2m2!1d13.5006072!2d52.3667!1m5!1m1!1s0x4652bbb05f22ca81:0xbbfe5da44a46c75c!2m2!1d12.6561278!2d55.6180172!3e4" target="_blank" class="cmbtn tr">✈ Fly BER → CPH &#8594;</a></div>
+      </div>
+
+      <div class="card sw">
+        <div class="chd"><div class="dn">24</div><div class="di"><div class="dd">Mon 3 Aug</div><div class="dl">Copenhagen → Gothenburg — Night 1 💙</div></div><div class="fl">🇩🇰🇸🇪</div></div>
+        <div class="cb">Morning Copenhagen — Rosenborg Castle, final Nyhavn coffee. X2000 train CPH → Gothenburg (~3.5hrs, stunning Øresund Bridge coastal crossing). Arrive afternoon. <strong>Meet sister! 💙</strong> Harbour seafood dinner together.
+          <div class="ti"><span>🚆</span> X2000 ~3.5 hrs · depart Copenhagen ~11:00 · arrive Gothenburg ~14:30</div>
+          <div><span class="tag sw">Gothenburg — Night 1 💙</span><span class="tag sister">Sister Visit!</span></div>
+        </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d11.97!3d57.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f8cfa82f7e7f3%3A0xe8029e4d9e2a5cef!2sHaga%2C+Gothenburg!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Copenhagen+Central+Station/Gothenburg+Central+Station/@56.2,12.5,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4652933bbc4aebc1:0x80e5d0b1b7d8b3bc!2m2!1d12.5645354!2d55.6726143!1m5!1m1!1s0x464f8cfa82f7e7f3:0xe8029e4d9e2a5cef!2m2!1d11.9734!2d57.7083!3e3" target="_blank" class="cmbtn tr">🚆 X2000 Copenhagen → Gothenburg &#8594;</a></div>
+      </div>
+
+      <div class="card sw">
+        <div class="chd"><div class="dn">25</div><div class="di"><div class="dd">Tue 4 Aug</div><div class="dl">Gothenburg — Full Day with Sister 💙</div></div><div class="fl">🇸🇪</div></div>
+        <div class="cb">Full day with sister — Liseberg amusement park (one of Europe's best!), Haga cobblestone neighbourhood (famous giant cinnamon buns!), West Sweden Archipelago boat trip, long seafood dinner on the harbour in the endless Swedish summer evening light.
+          <div><span class="tag sw">Gothenburg — Night 2 💙</span><span class="tag sister">Full Day with Sister!</span><span class="tag must">Full Day</span></div>
+        </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000!2d11.97!3d57.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f8cfa82f7e7f3%3A0xe8029e4d9e2a5cef!2sHaga%2C+Gothenburg!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Gothenburg+Central+Station/Haga+Gothenburg/Liseberg+Gothenburg/Feskek%C3%B4rka+Gothenburg/@57.698,11.963,14z/data=!3m1!4b1!4m26!4m25!1m5!1m1!1s0x464f8cfa82f7e7f3:0xe8029e4d9e2a5cef!2m2!1d11.9734!2d57.7083!1m5!1m1!1s0x464f8cfa82f7e7f3:0xe8029e4d9e2a5cef!2m2!1d11.9557!2d57.6976!1m5!1m1!1s0x464f8cf452db9591:0x89feac4e1c14fdfe!2m2!1d11.9925!2d57.6953!1m5!1m1!1s0x464f8ce10d1d3e91:0xfb6e3c2de79f2a96!2m2!1d11.9565!2d57.702!3e2" target="_blank" class="cmbtn wk">🚶 Gothenburg: Haga → Liseberg → Harbour 💙 &#8594;</a></div>
       </div>
 
     </div>
   </div>
 
-  <!-- LEG 3: SCANDINAVIA -->
+  <!-- LEG 7: FLY MUNICH + BEIJING + HOME -->
   <div class="leg">
     <div class="leg-hd">
-      <span class="badge b-fly">✈ Fly &amp; Train</span>
-      <span class="lt">Amsterdam, Copenhagen &amp; Sweden</span>
-      <span class="ld">Days 20–24 · Jul 14–18</span>
+      <span class="badge b-fly">✈ GOT→MUC 06:30 · 5 Aug</span>
+      <span class="badge b-china">🇨🇳 Beijing · Home</span>
+      <span class="lt">Munich Day Room · Great Wall · Auckland</span>
+      <span class="ld">5 Aug – 8 Aug</span>
+    </div>
+    <div class="trow ok" style="margin-bottom:0.8rem">
+      <span>✅</span>
+      <div><strong>Wed 5 Aug — how the Munich day works:</strong> Sleep Gothenburg Tue night (4 Aug). Wake 05:00. Airport taxi 05:20. Fly GOT→MUC 06:30 → land MUC 08:30. Book a <strong>day-use room at Novotel Munich Airport</strong> (~€60–80, check-in 09:00 check-out 18:00) — shower, rest, explore Munich city by S-Bahn. Back MUC by 21:00, sleep at airport hotel. Thu 6 Aug: Check-in CA962 from 09:00, board 11:00, depart <strong>13:00 ✅</strong></div>
     </div>
     <div class="grid">
-
-      <div class="card">
-        <div class="chd"><div class="dn">20</div><div class="di"><div class="dd">Tue 14 Jul</div><div class="dl">Paris → Amsterdam</div></div><div class="fl">🇳🇱</div></div>
-        <div class="cb">Thalys train Paris Nord → Amsterdam Centraal (~3h 20min). Canals, Anne Frank House (pre-book!), Rijksmuseum, Jordaan neighbourhood. ⚠️ Bastille Day — book this train early.
-          <div class="ti"><span>🚆</span> Thalys ~3h 20min</div>
+      <div class="card ch">
+        <div class="chd"><div class="dn">—</div><div class="di"><div class="dd">Thu 6 Aug · depart 13:00</div><div class="dl">Munich → Beijing · CA962</div></div><div class="fl">🇩🇪→🇨🇳</div></div>
+        <div class="cb"><strong>CA962</strong> MUC T2 departs 13:00. Check-in by 10:30. Arrive PEK 04:45 Fri 7 Aug. Rest ~3hrs at Novotel T3. <strong>Great Wall at Mutianyu</strong> (~1.5hrs taxi from T3) — cable car up, famous toboggan down. Back T3 by 21:00.
+          <div><span class="tag ch">Great Wall · Mutianyu 🏯</span><span class="tag must">Check-in by 10:30</span></div>
         </div>
       </div>
-
-      <div class="card">
-        <div class="chd"><div class="dn">21</div><div class="di"><div class="dd">Wed 15 Jul</div><div class="dl">Amsterdam → Copenhagen</div></div><div class="fl">🇩🇰</div></div>
-        <div class="cb">Fly Amsterdam → Copenhagen (~1h 40min). Arrive midday. Nyhavn harbour, Tivoli Gardens, The Little Mermaid, Strøget shopping street.
-          <div class="ti"><span>✈</span> AMS → CPH ~1h 40min</div>
+      <div class="card ch">
+        <div class="chd"><div class="dn">—</div><div class="di"><div class="dd">Sat 8 Aug · arrive 16:30</div><div class="dl">Beijing → Auckland 🏠</div></div><div class="fl">🇨🇳→🇳🇿</div></div>
+        <div class="cb"><strong>CA783</strong> PEK 00:05 → <strong>AKL 16:30 Sat 8 Aug</strong>. 25 nights, 23 destinations, two Beijing stopovers, sister visit in Gothenburg — an extraordinary journey. Welcome home! 🎉
+          <div><span class="tag must">AKL 16:30 · Sat 8 Aug ✅</span></div>
         </div>
+          <div class="cm" style="margin-top:0.6rem;border-top:1px solid #ede5d8;padding-top:0.55rem"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d11.79!3d48.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e0d73009b38e1%3A0x4ae6cc4882b6b0ef!2sMunich+Airport!5e0!3m2!1sen!2sau!4v1" width="100%" height="180" style="border:0;border-radius:3px;display:block;margin-bottom:0.45rem" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://www.google.com/maps/dir/Gothenburg+Landvetter+Airport/Munich+Airport/@54.0,11.0,6z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x464f80ab67e9e6a1:0xf99f9da2e7a1dc18!2m2!1d12.2981!2d57.6628!1m5!1m1!1s0x479e0d73009b38e1:0x4ae6cc4882b6b0ef!2m2!1d11.786085!2d48.353802!3e4" target="_blank" class="cmbtn tr">✈ Fly GOT → MUC · Book Now! &#8594;</a></div>
       </div>
-
-      <div class="card">
-        <div class="chd"><div class="dn">22</div><div class="di"><div class="dd">Thu 16 Jul</div><div class="dl">Copenhagen → Stockholm</div></div><div class="fl">🇸🇪</div></div>
-        <div class="cb">Train or fly to Stockholm. Arrive midday. Gamla Stan (Old Town), Vasa Museum, Djurgården island. Barely gets dark — almost midnight sun!
-          <div class="ti"><span>🚆</span> Train ~5hrs via Øresund Bridge (scenic) OR ✈ ~1h 15min</div>
-          <div><span class="tag sw">Sweden — Day 1 of 3 ✅</span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="dn">23</div><div class="di"><div class="dd">Fri 17 Jul</div><div class="dl">Stockholm — Full Day</div></div><div class="fl">🇸🇪</div></div>
-        <div class="cb">Full day — ABBA Museum, Royal Palace, Stockholm Archipelago ferry, Fotografiska Museum, Södermalm for dinner in the endless summer evening light.
-          <div><span class="tag sw">Sweden — Day 2 of 3 ✅</span><span class="tag must">Full Day</span></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="chd"><div class="dn">24</div><div class="di"><div class="dd">Sat 18 Jul</div><div class="dl">Stockholm → Colombo</div></div><div class="fl">🇸🇪→🇱🇰</div></div>
-        <div class="cb">Morning: Skansen open-air museum or final canal walk. Afternoon/evening flight Stockholm Arlanda → Colombo via Dubai or Singapore. Arrive Colombo late night / early 19 Jul.
-          <div class="ti"><span>✈</span> ARN → CMB via DXB or SIN · ~11–14 hrs total</div>
-          <div><span class="tag sw">Sweden — Day 3 of 3 ✅</span><span class="tag sl">Fly → Sri Lanka</span></div>
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <div class="trow sl">
-    <span>🌴</span>
-    <div><strong>Stockholm → Colombo:</strong> Best options — Emirates ARN→DXB→CMB (~12hrs) or Singapore Airlines ARN→SIN→CMB (~14hrs). Book as one itinerary. Arrive Colombo Bandaranaike International Airport (BIA) late 18 Jul or early 19 Jul.</div>
-  </div>
-
-  <!-- LEG 4: SRI LANKA -->
-  <div class="leg" style="margin-top:1.5rem">
-    <div class="leg-hd">
-      <span class="badge b-sl">🌴 Sri Lanka</span>
-      <span class="lt">The Pearl of the Indian Ocean</span>
-      <span class="ld">6 Nights · Jul 18–24</span>
-    </div>
-    <div class="grid">
-
-      <div class="card slc">
-        <div class="chd"><div class="dn">25</div><div class="di"><div class="dd">Sun 19 Jul</div><div class="dl">Arrive Colombo</div></div><div class="fl">🇱🇰</div></div>
-        <div class="cb">Arrive and check in. Rest up. Afternoon: Colombo Fort, Galle Face Green oceanfront, Dutch Hospital precinct for dinner.
-          <div><span class="tag sl">Arrive Sri Lanka</span></div>
-        </div>
-      </div>
-
-      <div class="card slc">
-        <div class="chd"><div class="dn">26</div><div class="di"><div class="dd">Mon 20 Jul</div><div class="dl">Colombo → Galle</div></div><div class="fl">🇱🇰</div></div>
-        <div class="cb">Drive south to Galle (~2.5hrs). UNESCO Galle Fort — Dutch colonial ramparts, lighthouse, boutique lanes, fresh seafood lunch by the ocean.
-          <div class="ti"><span>🚗</span> ~120 km · 2–2.5 hrs · Southern Expressway</div>
-          <div><span class="tag sl">Galle Fort · UNESCO</span></div>
-        </div>
-      </div>
-
-      <div class="card slc">
-        <div class="chd"><div class="dn">27</div><div class="di"><div class="dd">Tue 21 Jul</div><div class="dl">Mirissa Beach</div></div><div class="fl">🇱🇰</div></div>
-        <div class="cb">Beach day on the south coast — turquoise water, palms, fresh seafood. Whale watching tour (book evening before, depart 6am — blue whales Jun–Aug).
-          <div><span class="tag sl">Beach Day 🏖</span><span class="tag must">Whale Watching</span></div>
-        </div>
-      </div>
-
-      <div class="card slc">
-        <div class="chd"><div class="dn">28</div><div class="di"><div class="dd">Wed 22 Jul</div><div class="dl">South Coast → Kandy</div></div><div class="fl">🇱🇰</div></div>
-        <div class="cb">Drive through highland tea country to Kandy (~4hrs). Temple of the Sacred Tooth Relic. Evening Kandyan cultural dance performance.
-          <div class="ti"><span>🚗</span> ~180 km · 4–4.5 hrs through highlands</div>
-          <div><span class="tag sl">Temple of Tooth Relic 🪷</span></div>
-        </div>
-      </div>
-
-      <div class="card slc">
-        <div class="chd"><div class="dn">29</div><div class="di"><div class="dd">Thu 23 Jul</div><div class="dl">Kandy → Colombo</div></div><div class="fl">🇱🇰</div></div>
-        <div class="cb">Morning: Peradeniya Royal Botanical Gardens. Drive back to Colombo (~3hrs). Afternoon: teas, spices, batik and gem shopping.
-          <div class="ti"><span>🚗</span> ~115 km · 3–3.5 hrs</div>
-          <div><span class="tag sl">Botanical Gardens · Shopping</span></div>
-        </div>
-      </div>
-
-      <div class="card slc">
-        <div class="chd"><div class="dn">30</div><div class="di"><div class="dd">Fri 24 Jul</div><div class="dl">Colombo → Auckland ✈</div></div><div class="fl">🇱🇰→🇳🇿</div></div>
-        <div class="cb">Final morning in Colombo — last Sri Lankan breakfast (hoppers &amp; coconut sambol!). Fly CMB → Auckland via Singapore or Dubai. Arrive Auckland evening/night <strong>24 Jul</strong> — home for the weekend! ✅
-          <div class="ti"><span>✈</span> CMB → AKL via SIN or DXB · ~13–16 hrs total</div>
-          <div><span class="tag sl">Departure</span><span class="tag must">AKL by 24 Jul ✅</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- TRANSIT TABLE -->
+  <!-- COMPLETE NIGHT-BY-NIGHT TABLE -->
   <div class="leg">
-    <div class="leg-hd"><span class="badge b-sum">📍 Reference</span><span class="lt">All Transit Times</span></div>
+    <div class="leg-hd"><span class="badge b-sum">🌙 Calendar</span><span class="lt">Every Night · Every Date · Verified</span></div>
     <table>
-      <thead><tr><th>Leg</th><th>Mode</th><th>Duration / Distance</th><th>Notes</th></tr></thead>
+      <thead><tr><th>#</th><th>Date</th><th>Sleep in</th><th>Key activity / Travel</th></tr></thead>
       <tbody>
-        <tr><td>Auckland → Munich</td><td>✈ Fly</td><td class="dt">~24–26 hrs total</td><td>Via SIN (SQ) or DXB (EK) → MUC</td></tr>
-        <tr><td>Munich → Prague</td><td>🚗 Drive</td><td class="dt">380 km · 3.5–4 hrs</td><td>Motorway via Regensburg</td></tr>
-        <tr><td>Prague → Vienna</td><td>🚗 Drive</td><td class="dt">310 km · 3–3.5 hrs</td><td>D1/A1 motorway</td></tr>
-        <tr><td>Vienna → Venice (via Salzburg)</td><td>🚗 Drive</td><td class="dt">620 km · 6–7 hrs</td><td>Salzburg stop ~1hr</td></tr>
-        <tr><td>Venice → Florence</td><td>🚗 Drive</td><td class="dt">265 km · 2.5–3 hrs</td><td>A4/A1 motorway</td></tr>
-        <tr><td>Florence → Naples</td><td>🚗 Drive</td><td class="dt">480 km · 4.5–5.5 hrs</td><td>Pompeii stop recommended</td></tr>
-        <tr><td>Naples → Rome</td><td>🚗 Drive</td><td class="dt">225 km · 2–2.5 hrs</td><td>A1 motorway</td></tr>
-        <tr><td>Rome → Pisa → Milan</td><td>🚗 Drive</td><td class="dt">610 km · 6–7 hrs</td><td>Pisa stop ~1.5hrs</td></tr>
-        <tr><td>Milan → Interlaken</td><td>🚗 Drive</td><td class="dt">285 km · 3–3.5 hrs</td><td>Mountain roads, scenic</td></tr>
-        <tr><td>Interlaken → Lausanne → Zürich</td><td>🚗 Drive</td><td class="dt">230 km · 2.5–3 hrs</td><td>Lake Geneva stop 1.5hrs</td></tr>
-        <tr><td>Zürich → Munich Airport</td><td>🚗 Drive</td><td class="dt">330 km · 3–3.5 hrs</td><td>Drop rental car at MUC</td></tr>
-        <tr><td>Munich → Paris CDG</td><td>✈ Fly</td><td class="dt">~1h 45min</td><td>Lufthansa / Air France</td></tr>
-        <tr><td>Paris ⇄ Lourdes (return)</td><td>🚆 TGV</td><td class="dt">~5 hrs each way</td><td>Paris Montparnasse · book early!</td></tr>
-        <tr><td>Paris → Amsterdam</td><td>🚆 Thalys</td><td class="dt">~3h 20min</td><td>Paris Nord → Amsterdam Centraal</td></tr>
-        <tr><td>Amsterdam → Copenhagen</td><td>✈ Fly</td><td class="dt">~1h 40min</td><td>AMS → CPH</td></tr>
-        <tr><td>Copenhagen → Stockholm</td><td>🚆 / ✈</td><td class="dt">~5hrs train / 1h 15min fly</td><td>Train via Øresund Bridge is stunning</td></tr>
-        <tr class="slr"><td>Stockholm → Colombo</td><td>✈ Fly</td><td class="dt">~11–14 hrs total</td><td>Via DXB (Emirates) or SIN (SIA)</td></tr>
-        <tr class="slr"><td>Colombo → Galle</td><td>🚗 Drive</td><td class="dt">120 km · 2–2.5 hrs</td><td>Southern Expressway</td></tr>
-        <tr class="slr"><td>Galle → Kandy</td><td>🚗 Drive</td><td class="dt">~180 km · 4–4.5 hrs</td><td>Highland tea country roads</td></tr>
-        <tr class="slr"><td>Kandy → Colombo</td><td>🚗 Drive</td><td class="dt">115 km · 3–3.5 hrs</td><td>A1 highway return</td></tr>
-        <tr class="slr"><td>Colombo → Auckland</td><td>✈ Fly</td><td class="dt">~13–16 hrs total</td><td>Via SIN or DXB · Arrive 24 Jul ✅</td></tr>
+        <tr><td>1</td><td>Sat 11 Jul</td><td>Munich</td><td>Arrive CA961 07:05 · collect rental car · jet lag rest</td></tr>
+        <tr><td>2</td><td>Sun 12 Jul</td><td>Hallstatt</td><td>Drive Munich→Hallstatt · UNESCO lake village · salt mine</td></tr>
+        <tr><td>3</td><td>Mon 13 Jul</td><td>Prague</td><td>Long drive Hallstatt→Prague · <strong>Start 08:00</strong></td></tr>
+        <tr><td>4</td><td>Tue 14 Jul</td><td>Prague</td><td>Prague full day · Castle · Jewish Quarter · river cruise</td></tr>
+        <tr><td>5</td><td>Wed 15 Jul</td><td>Vienna</td><td>Prague→Vienna · Schönbrunn · Naschmarkt · Sachertorte</td></tr>
+        <tr class="budr"><td>6</td><td>Thu 16 Jul</td><td>Budapest</td><td>Vienna→Budapest · Széchenyi Thermal Baths!</td></tr>
+        <tr class="slor"><td>7</td><td>Fri 17 Jul</td><td>Venice</td><td>Budapest→<strong>Bled 2.5hr stop</strong>→Venice · <strong>Start 07:30</strong></td></tr>
+        <tr><td>8</td><td>Sat 18 Jul</td><td>Venice</td><td>Venice full day · gondola · Burano island</td></tr>
+        <tr><td>9</td><td>Sun 19 Jul</td><td>Florence</td><td>Venice→Florence · Ponte Vecchio · Piazzale Michelangelo</td></tr>
+        <tr><td>10</td><td>Mon 20 Jul</td><td>Rome</td><td>Florence→Pisa stop→Rome · Colosseum · Trastevere</td></tr>
+        <tr><td>11</td><td>Tue 21 Jul</td><td>Rome</td><td><strong>Pompeii + Naples day trip</strong> from Rome base · <strong>Start 08:00</strong></td></tr>
+        <tr><td>12</td><td>Wed 22 Jul</td><td>Rome</td><td>Vatican full day · pre-book essential · depart 07:00</td></tr>
+        <tr><td>13</td><td>Thu 23 Jul</td><td>Milan</td><td>Rome→Florence stop→Milan · <strong>Start 07:30</strong></td></tr>
+        <tr><td>14</td><td>Fri 24 Jul</td><td>Zermatt</td><td>Milan→Zermatt (Täsch) · Matterhorn golden hour</td></tr>
+        <tr><td>15</td><td>Sat 25 Jul</td><td>Interlaken</td><td>Gornergrat Railway 08:00 (3,089m) → drive Interlaken</td></tr>
+        <tr><td>16</td><td>Sun 26 Jul</td><td>Interlaken</td><td>Jungfraujoch full day (3,454m) · depart 07:00</td></tr>
+        <tr><td>17</td><td>Mon 27 Jul</td><td>Zürich</td><td>Interlaken→Lausanne stop→Zürich</td></tr>
+        <tr><td>18</td><td>Tue 28 Jul</td><td>Paris</td><td>Zürich→Munich drop car→fly Paris · arrive afternoon</td></tr>
+        <tr><td>19</td><td>Wed 29 Jul</td><td>Lourdes</td><td>TGV Paris 08:00→Lourdes · Sanctuary · Torch Procession</td></tr>
+        <tr class="amsr"><td>20</td><td>Thu 30 Jul</td><td><strong>Amsterdam ✅</strong></td><td>TGV Lourdes 08:00→Paris 13:00 · taxi 40min → Thalys 14:13→Amsterdam 17:32</td></tr>
+        <tr class="berr"><td>21</td><td>Fri 31 Jul</td><td>Berlin</td><td>Train Amsterdam→Berlin · arrive ~15:00 · East Side Gallery</td></tr>
+        <tr class="berr"><td>22</td><td>Sat 1 Aug</td><td>Berlin</td><td>Berlin full day · Reichstag · Holocaust Memorial · Museum Island</td></tr>
+        <tr class="cphr"><td>23</td><td>Sun 2 Aug</td><td><strong>Copenhagen ✅</strong></td><td>Fly Berlin→Copenhagen · Nyhavn · Tivoli Gardens</td></tr>
+        <tr class="swr"><td>24</td><td>Mon 3 Aug</td><td><strong>Gothenburg 💙 N1</strong></td><td>Train Copenhagen→Gothenburg · meet sister! · harbour dinner</td></tr>
+        <tr class="swr"><td>25</td><td>Tue 4 Aug</td><td><strong>Gothenburg 💙 N2</strong></td><td>Full day with sister · Liseberg · Haga · Archipelago</td></tr>
+        <tr style="background:#ece8d8"><td colspan="2"><strong>Wed 5 Aug</strong></td><td><strong>Munich day room</strong></td><td>Fly GOT→MUC 06:30 · land 08:30 · Novotel day room · explore Munich · airport by 21:00</td></tr>
+        <tr class="chr"><td colspan="2"><strong>Thu 6 Aug</strong></td><td><strong>Depart CA962 13:00</strong></td><td>Check-in MUC T2 by 10:30 · board 11:00 · depart 13:00 → Beijing</td></tr>
+        <tr class="chr"><td colspan="2">Sat 8 Aug</td><td>Auckland 🏠</td><td>CA783 arrives AKL 16:30 · Great Wall done · Home!</td></tr>
+        <tr class="tot"><td colspan="2"><strong>25 NIGHTS ✅</strong></td><td colspan="2"><strong>Arrive Munich 11 Jul · Last sleep Gothenburg 4 Aug · Depart MUC 6 Aug 13:00 · AKL 8 Aug ✅</strong></td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- COUNTRY SUMMARY -->
+  <!-- ALL TRANSIT -->
   <div class="leg">
-    <div class="leg-hd"><span class="badge b-sum">🌍 Summary</span><span class="lt">Days per Country</span></div>
+    <div class="leg-hd"><span class="badge b-sum">📍 Transit</span><span class="lt">Every Journey · Times with Traffic Buffer</span></div>
     <table>
-      <thead><tr><th>Country</th><th>Cities / Regions</th><th>Nights</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Date</th><th>Leg</th><th>Mode</th><th>Time + Buffer</th><th>Start Time</th></tr></thead>
       <tbody>
-        <tr><td>🇩🇪 Germany</td><td>Munich</td><td class="dt">2</td><td>Arrive Day 1 · full day Day 2</td></tr>
-        <tr><td>🇨🇿 Czechia</td><td>Prague</td><td class="dt">2</td><td>Drive in Day 3 · full day Day 4</td></tr>
-        <tr><td>🇦🇹 Austria</td><td>Vienna + Salzburg stop</td><td class="dt">1</td><td>Overnight Vienna</td></tr>
-        <tr><td>🇮🇹 Italy</td><td>Venice, Florence, Naples, Rome, Pisa</td><td class="dt">4</td><td>Most road trip time</td></tr>
-        <tr><td>🇨🇭 Switzerland</td><td>Alps, Interlaken (×2), Lausanne, Zürich</td><td class="dt">3</td><td>2 nights Interlaken · 1 night Zürich</td></tr>
-        <tr><td>🇫🇷 France</td><td>Paris + Lourdes</td><td class="dt">4</td><td>2 nights Paris · 2 nights Lourdes</td></tr>
-        <tr><td>🇳🇱 Netherlands</td><td>Amsterdam</td><td class="dt">1</td><td>Overnight</td></tr>
-        <tr><td>🇩🇰 Denmark</td><td>Copenhagen</td><td class="dt">1</td><td>Overnight</td></tr>
-        <tr><td>🇸🇪 Sweden</td><td>Stockholm</td><td class="dt">3</td><td>✅ 3 days as required</td></tr>
-        <tr class="slr"><td>🇱🇰 Sri Lanka</td><td>Colombo, Galle, Mirissa, Kandy</td><td class="dt">6</td><td>✅ 6 nights as required</td></tr>
-        <tr class="tot"><td colspan="2"><strong>TOTAL AWAY FROM AUCKLAND</strong></td><td><strong>30</strong></td><td><strong>Depart 24 Jun → Back 24 Jul ✅</strong></td></tr>
+        <tr class="chr"><td>Thu 9 Jul</td><td>Auckland → Beijing CA784</td><td>✈</td><td class="dt">Dep 19:30 → Arr 04:40 Fri 10 Jul</td><td>—</td></tr>
+        <tr class="chr"><td>Sat 11 Jul</td><td>Beijing → Munich CA961</td><td>✈</td><td class="dt">Dep 02:50 → Arr 07:05</td><td>Collect car ~09:00</td></tr>
+        <tr><td>Sun 12 Jul</td><td>Munich → Hallstatt</td><td>🚗</td><td class="dt">~280 km · 3–3.5 hrs</td><td>10:00</td></tr>
+        <tr><td>Mon 13 Jul</td><td>Hallstatt → Prague</td><td>🚗</td><td class="dt">~500 km · 5.5–6.5 hrs</td><td><strong>08:00</strong></td></tr>
+        <tr><td>Wed 15 Jul</td><td>Prague → Vienna</td><td>🚗</td><td class="dt">~320 km · 3.5–4 hrs</td><td>11:00 (after castle)</td></tr>
+        <tr class="budr"><td>Thu 16 Jul</td><td>Vienna → Budapest</td><td>🚗</td><td class="dt">~270 km · 2.5–3.5 hrs + border</td><td>10:00</td></tr>
+        <tr class="slor"><td>Fri 17 Jul</td><td>Budapest → Bled (2.5hr stop) → Venice</td><td>🚗</td><td class="dt">~530 km total · 8–9 hrs</td><td><strong>07:30</strong></td></tr>
+        <tr><td>Sun 19 Jul</td><td>Venice → Florence</td><td>🚗</td><td class="dt">~270 km · 3–3.5 hrs</td><td>10:00</td></tr>
+        <tr><td>Mon 20 Jul</td><td>Florence → Pisa stop → Rome</td><td>🚗</td><td class="dt">~420 km · 5–6 hrs</td><td>09:30 (after Uffizi)</td></tr>
+        <tr><td>Tue 21 Jul</td><td>Rome → Pompeii → Naples → Rome (day trip)</td><td>🚗</td><td class="dt">~460 km round · 8–9 hrs</td><td><strong>08:00</strong> · back by 18:00</td></tr>
+        <tr><td>Thu 23 Jul</td><td>Rome → Florence stop → Milan</td><td>🚗</td><td class="dt">~580 km · 6.5–7.5 hrs</td><td><strong>07:30</strong></td></tr>
+        <tr><td>Fri 24 Jul</td><td>Milan → Zermatt (Täsch)</td><td>🚗</td><td class="dt">~220 km · 3–3.5 hrs + shuttle 12min</td><td>10:00</td></tr>
+        <tr><td>Sat 25 Jul</td><td>Zermatt (Gornergrat 08:00) → Interlaken</td><td>🚗</td><td class="dt">~130 km · 2.5–3 hrs mountain</td><td>Leave Zermatt 13:00</td></tr>
+        <tr><td>Mon 27 Jul</td><td>Interlaken → Lausanne stop → Zürich</td><td>🚗</td><td class="dt">~235 km · 3–3.5 hrs</td><td>10:00</td></tr>
+        <tr><td>Tue 28 Jul</td><td>Zürich → Munich Airport · drop car · fly Paris</td><td>🚗+✈</td><td class="dt">~340 km · 3.5–4 hrs + 1h 45min fly</td><td><strong>08:00</strong> from Zürich</td></tr>
+        <tr><td>Wed 29 Jul</td><td>Paris → Lourdes TGV</td><td>🚆</td><td class="dt">~5 hrs</td><td>Depart Paris Montparnasse 08:00</td></tr>
+        <tr class="amsr"><td>Thu 30 Jul</td><td>Lourdes TGV → Paris → taxi → Thalys → Amsterdam</td><td>🚆+🚆</td><td class="dt">TGV 08:00→13:00 · taxi 40min · Thalys 14:13→17:32</td><td><strong>08:00 Lourdes — critical!</strong></td></tr>
+        <tr class="berr"><td>Fri 31 Jul</td><td>Amsterdam → Berlin ICE</td><td>🚆</td><td class="dt">~6 hrs</td><td>Depart Amsterdam 09:00</td></tr>
+        <tr class="cphr"><td>Sun 2 Aug</td><td>Berlin → Copenhagen fly</td><td>✈</td><td class="dt">~1h 10min</td><td>Depart 10:00 BER</td></tr>
+        <tr class="swr"><td>Mon 3 Aug</td><td>Copenhagen → Gothenburg X2000</td><td>🚆</td><td class="dt">~3.5 hrs</td><td>Depart CPH 11:00</td></tr>
+        <tr class="swr"><td>Wed 5 Aug</td><td>Gothenburg → Munich GOT→MUC</td><td>✈</td><td class="dt">~2 hrs · land 08:30</td><td><strong>Depart GOT 06:30 — book now!</strong></td></tr>
+        <tr class="chr"><td>Thu 6 Aug</td><td>Munich → Beijing CA962</td><td>✈</td><td class="dt">Dep 13:00 → Arr 04:45 Fri 7 Aug</td><td>Check-in MUC T2 by 10:30</td></tr>
+        <tr class="chr"><td>Sat 8 Aug</td><td>Beijing → Auckland CA783</td><td>✈</td><td class="dt">Dep 00:05 → Arr 16:30</td><td>—</td></tr>
       </tbody>
     </table>
   </div>
+
 
   <div class="tips">
-    <h3>🗒 Europe Planning Tips</h3>
+    <h3>🗒 Book These Now — In Priority Order</h3>
     <ul>
-      <li><strong>Rental car (Munich):</strong> Collect at Munich Airport (MUC) on arrival Day 1. Your NZ driving licence is valid throughout Europe — check if you need an International Driving Permit (IDP), as some EU countries require it alongside the NZ licence.</li>
-      <li><strong>Jungfraujoch (Interlaken):</strong> Book the cogwheel train in advance at jungfrau.ch — tickets sell out in peak summer. Depart early morning for the clearest views. Dress warm (it's 3,454m!).</li>
-      <li><strong>Toll vignettes:</strong> Austria, Switzerland and Czechia require motorway stickers (~€35 total). Buy at the border or online before crossing.</li>
-      <li><strong>Italy ZTL zones:</strong> Florence, Rome and Venice all have restricted driving zones in their historic centres. Always park on the outskirts and walk or use public transport inside.</li>
-      <li><strong>Vatican &amp; Anne Frank House:</strong> Both need advance booking — essential in peak summer. Book from Auckland before you leave.</li>
-      <li><strong>Lourdes TGV:</strong> Peak pilgrimage season June–July. Book immediately after confirming accommodation — trains fill weeks out.</li>
-      <li><strong>Bastille Day (14 Jul):</strong> You'll be in Paris the evening of 13 Jul — fireworks at the Eiffel Tower at 11pm. A magical and completely unplanned bonus! Book the Paris→Amsterdam Thalys for 14 Jul well ahead as it's a national holiday.</li>
-      <li><strong>Zürich extra time:</strong> With a full morning before driving to Munich, consider a side trip to Rhine Falls (30min drive) — the largest waterfall in Europe, spectacular in summer.</li>
+      <li><strong>1. GOT→MUC flight · Wed 5 Aug 06:30:</strong> The single most critical booking. Search SAS (SK2680 or similar), Norwegian, Ryanair for GOT→MUC departing ~06:00–07:00 on 5 Aug. Must land MUC by 09:00. Book this today.</li>
+      <li><strong>2. Lourdes TGV (both directions):</strong> Paris Montparnasse → Lourdes 29 Jul 08:00. Lourdes → Paris 30 Jul 08:00. July peak fills weeks ahead. Book immediately.</li>
+      <li><strong>3. Vatican · museivaticani.va:</strong> Sells out 3–4 weeks ahead in July. Shoulders and knees covered for St. Peter's.</li>
+      <li><strong>4. Hallstatt accommodation:</strong> Tiny village, fills months ahead. Book immediately.</li>
+      <li><strong>5. Jungfraujoch · jungfrau.ch:</strong> Book months ahead. 0°C at summit — warm layers essential. Depart 07:00.</li>
+      <li><strong>6. Uffizi Gallery · uffizi.it:</strong> No same-day tickets in July. Book from Auckland.</li>
+      <li><strong>7. Gornergrat Railway · gornergrat.ch:</strong> First train 08:00. Book ahead for July.</li>
+      <li><strong>8. Berlin Reichstag · bundestag.de:</strong> Free but must register 3+ weeks ahead.</li>
+      <li><strong>9. Munich Airport day-use room:</strong> Novotel Munich Airport (connected to T2) or H4 Hotel MUC — book a day room for 5 Aug (check-in 09:00, check-out 18:00). ~€60–80.</li>
+      <li><strong>10. Rental car vignettes:</strong> Austria, Switzerland, Czechia, Hungary, Slovenia — motorway stickers ~€60 total. Buy at first border crossing.</li>
+      <li><strong>Thalys Paris→Amsterdam (30 Jul):</strong> You need the ~14:13 departure from Paris Nord. Book it now — it must connect with your Lourdes TGV arrival at Montparnasse at 13:00. Allow 40min to switch stations by taxi.</li>
     </ul>
   </div>
 
-  <div class="tips sl" style="margin-top:1rem">
-    <h3>🌴 Sri Lanka Planning Tips</h3>
+  <div class="tips ch" style="margin-top:1rem">
+    <h3>🇨🇳 Beijing — Both Stopovers</h3>
     <ul>
-      <li><strong>ETA Visa:</strong> NZ passport holders need an Electronic Travel Authorisation — apply at eta.gov.lk before departure. ~USD $20, instant approval.</li>
-      <li><strong>Private driver:</strong> Strongly recommended for the Galle/Mirissa/Kandy loop. ~USD $60–80/day — far easier than self-driving on Sri Lankan roads. Your Colombo hotel can arrange this.</li>
-      <li><strong>July weather:</strong> SW monsoon affects the south and west coasts — expect short tropical showers, not all-day rain. Light rain jacket recommended. Kandy and hill country are generally clear and beautiful.</li>
-      <li><strong>Temple of the Sacred Tooth (Kandy):</strong> One of Buddhism's most sacred sites. Dress code: shoulders and knees covered. Arrive at puja ceremony times (6am, 9:30am, 6:30pm) for the full experience.</li>
-      <li><strong>Whale watching (Mirissa):</strong> Blue whales Jun–Aug, high success rate in July. Book the evening before for a 6am departure. Takes ~3hrs on the water.</li>
-      <li><strong>Return flight CMB → AKL:</strong> Singapore Airlines CMB→SIN→AKL or Emirates CMB→DXB→AKL. Depart morning of 24 Jul to arrive AKL same evening. Confirm 24 Jul arrival when booking.</li>
-      <li><strong>Currency:</strong> Sri Lankan Rupee (LKR). USD accepted widely in tourist areas. ATMs available in Colombo, Galle and Kandy.</li>
+      <li><strong>Outbound (22hrs · Fri 10 Jul):</strong> Land 04:40. Novotel T3 airside ~3hrs. Airport Express 08:00 (45min, ¥35). Tiananmen Square + Forbidden City (opens 08:30, allow 4hrs). Wangfujing lunch. Back T3 midnight. CA961 departs 02:50.</li>
+      <li><strong>Inbound (19hrs · Fri 7 Aug):</strong> Land 04:45. Rest ~3hrs. Mutianyu Great Wall ~09:00 (taxi ~1.5hrs from T3). Cable car up, toboggan down. Lunch at the wall. Back T3 by 21:00. CA783 departs 00:05.</li>
+      <li><strong>144-hr Visa-Free Transit:</strong> NZ passport holders eligible — confirm at nzembassy.com before departure.</li>
+      <li><strong>Novotel T3:</strong> Covered walkway to Terminal 3 — no visa needed to stay airside.</li>
+      <li><strong>Airport Express:</strong> T3 → Dongzhimen 45min, ¥35 (~NZD $8). Subway Line 1 to Tiananmen East (2 stops).</li>
     </ul>
   </div>
 
 </div>
 
 <footer>
-  Depart Auckland 24 Jun · Arrive Munich 25 Jun · Collect Car Munich Day 1 · Drop Car Munich Day 15 · 24 days Europe · Depart Stockholm 18 Jul · 6 nights Sri Lanka · Back Auckland 24 Jul ✅ · 30 nights total away
+  Avi's Family Trip · CA784 AKL 9 Jul → Beijing (Forbidden City) → CA961 Munich 11 Jul · 25 nights exactly · Munich→Hallstatt→Prague→Vienna→Budapest→Bled stop→Venice→Florence→Rome×3 (Pompeii+Naples day trip + Vatican)→Milan→Zermatt→Interlaken×2→Zürich → drop car Munich → fly Paris→Lourdes→Amsterdam→Berlin×2→Copenhagen→Gothenburg×2 (sister 💙) · Fly GOT→MUC 06:30 Wed 5 Aug · CA962 MUC 13:00 Thu 6 Aug → Beijing (Great Wall) → CA783 AKL 8 Aug 16:30
 </footer>
-
 </body>
 </html>
